@@ -1,0 +1,649 @@
+{
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Leader>",
+                "g",
+                "s"
+            ],
+            "commands": [
+                "git.stageSelectedRanges"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "g",
+                "u"
+            ],
+            "commands": [
+                "git.unstageSelectedRanges"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "g",
+                "r"
+            ],
+            "commands": [
+                "git.revertSelectedRanges"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "leader",
+                "g",
+                "g"
+            ],
+            "commands": [
+                "workbench.scm.focus"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "i",
+                "r"
+            ],
+            "commands": [
+                "git.init"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "a",
+                "i"
+            ],
+            "commands": [
+                "git.ignore"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "a",
+                "r"
+            ],
+            "commands": [
+                "git.addRemote"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "r",
+                "r"
+            ],
+            "commands": [
+                "git.removeRemote"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "c"
+            ],
+            "commands": [
+                "git.stage"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "a",
+                "c"
+            ],
+            "commands": [
+                "git.stageAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "a",
+                "m",
+                "c"
+            ],
+            "commands": [
+                "git.stageAllMerge"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "a",
+                "t",
+                "c"
+            ],
+            "commands": [
+                "git.stageAllTracked"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "a",
+                "t",
+                "c"
+            ],
+            "commands": [
+                "git.stageAllUntracked"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "u",
+                "c"
+            ],
+            "commands": [
+                "git.unstage"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "u",
+                "a",
+                "c"
+            ],
+            "commands": [
+                "git.unstageAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "c"
+            ],
+            "commands": [
+                "git.commit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "a"
+            ],
+            "commands": [
+                "git.commitAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "s"
+            ],
+            "commands": [
+                "git.commitStaged"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "e"
+            ],
+            "commands": [
+                "git.commitEmpty"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "u",
+                "l",
+                "c"
+            ],
+            "commands": [
+                "git.undoCommit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p"
+            ],
+            "commands": [
+                "git.push"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "f"
+            ],
+            "commands": [
+                "git.pushForce"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "b",
+                "t"
+            ],
+            "commands": [
+                "git.pushTo"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "b",
+                "t",
+                "f"
+            ],
+            "commands": [
+                "git.pushToForce"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "P"
+            ],
+            "commands": [
+                "git.pull"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "P",
+                "f"
+            ],
+            "commands": [
+                "git.pullFrom"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "P",
+                "r"
+            ],
+            "commands": [
+                "git.pullRebase"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "A",
+                "r"
+            ],
+            "commands": [
+                "git.rebaseAbort"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "b"
+            ],
+            "commands": [
+                "git.branch"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "b",
+                "f"
+            ],
+            "commands": [
+                "git.branchFrom"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "b"
+            ],
+            "commands": [
+                "git.deleteBranch"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "m",
+                "b"
+            ],
+            "commands": [
+                "git.merge"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "b"
+            ],
+            "commands": [
+                "git.publish"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "r",
+                "b"
+            ],
+            "commands": [
+                "git.renameBranch"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "R",
+                "b"
+            ],
+            "commands": [
+                "git.rebase"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "C"
+            ],
+            "commands": [
+                "git.checkout"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "C",
+                "d"
+            ],
+            "commands": [
+                "git.checkoutDetached"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "p"
+            ],
+            "commands": [
+                "git.cherryPick"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "c"
+            ],
+            "commands": [
+                "git.clean"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "a",
+                "c"
+            ],
+            "commands": [
+                "git.cleanAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "a",
+                "t",
+                "c"
+            ],
+            "commands": [
+                "git.cleanAllTracked"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "a",
+                "u",
+                "c"
+            ],
+            "commands": [
+                "git.cleanAllUntracked"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "s"
+            ],
+            "commands": [
+                "git.stash"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "s",
+                "i",
+                "u"
+            ],
+            "commands": [
+                "git.stashIncludeUntracked"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "a",
+                "s"
+            ],
+            "commands": [
+                "git.stashApply"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "a",
+                "l",
+                "s"
+            ],
+            "commands": [
+                "git.stashApplyLatest"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "s"
+            ],
+            "commands": [
+                "git.stashDrop"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "s"
+            ],
+            "commands": [
+                "git.stashPop"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "l",
+                "s"
+            ],
+            "commands": [
+                "git.stashPopLatest"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "c",
+                "t"
+            ],
+            "commands": [
+                "git.createTag"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "d",
+                "t"
+            ],
+            "commands": [
+                "git.deleteTag"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "p",
+                "t"
+            ],
+            "commands": [
+                "git.pushTags"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "git.fetch"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "f",
+                "p"
+            ],
+            "commands": [
+                "git.fetchPrune"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "f",
+                "f",
+                "a",
+                "r"
+            ],
+            "commands": [
+                "git.fetchAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "o",
+                "c"
+            ],
+            "commands": [
+                "git.openChange"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "o",
+                "f"
+            ],
+            "commands": [
+                "git.openFile"
+            ]
+        }
+    ]
+}
