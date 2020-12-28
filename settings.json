@@ -131,6 +131,16 @@
             "before": [
                 "leader",
                 "g",
+                "t"
+            ],
+            "commands": [
+                "timeline.focus"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
                 "i",
                 "r"
             ],
