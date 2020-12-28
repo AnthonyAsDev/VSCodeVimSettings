@@ -9,7 +9,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code + Commands
 | Status             | Command          | Description                       |
 | ------------------ | ---------------- | --------------------------------- |
 | :white_check_mark: | `<leader>` gg    | Focus On Source Control View      |
-| :white_check_mark: | `<leader>` gt    | Focus On Timeline View            |
+| :white_check_mark: | `<leader>` gtl    | Focus On Timeline View            |
 | :white_check_mark: | `<leader>` gir   | Git Initialize Repository         |
 | :white_check_mark: | `<leader>` gai   | Git Add To .gitignore             |
 | :white_check_mark: | `<leader>` gar   | Git Add Remote                    |
@@ -78,7 +78,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.scm.focus"]
 		},
 		{
-			"before": ["leader", "g", "t"],
+			"before": ["leader", "g", "t", "l"],
 			"commands": ["timeline.focus"]
 		},
 		{

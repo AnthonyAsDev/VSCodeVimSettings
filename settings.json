@@ -131,7 +131,8 @@
             "before": [
                 "leader",
                 "g",
-                "t"
+                "t",
+                "l"
             ],
             "commands": [
                 "timeline.focus"
