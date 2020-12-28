@@ -30,6 +30,89 @@
             "commands": [
                 "git.revertSelectedRanges"
             ]
+        },
+        // Emmet
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "b",
+                "i"
+            ],
+            "commands": [
+                "editor.emmet.action.balanceIn"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "b",
+                "o"
+            ],
+            "commands": [
+                "editor.emmet.action.balanceOut"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "t"
+            ],
+            "commands": [
+                "editor.emmet.action.matchTag"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "c"
+            ],
+            "commands": [
+                "editor.emmet.action.toggleComment"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "n"
+            ],
+            "commands": [
+                "editor.emmet.action.selectNextItem"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "p"
+            ],
+            "commands": [
+                "editor.emmet.action.selectPrevItem"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "x"
+            ],
+            "commands": [
+                "editor.emmet.action.evaluateMathExpression"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "w"
+            ],
+            "commands": [
+                "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
+            ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -652,28 +735,6 @@
             "before": [
                 "<Leader>",
                 "e",
-                "b",
-                "i"
-            ],
-            "commands": [
-                "editor.emmet.action.balanceIn"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "e",
-                "b",
-                "o"
-            ],
-            "commands": [
-                "editor.emmet.action.balanceOut"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "e",
                 "i",
                 "0"
             ],
@@ -740,7 +801,7 @@
             "before": [
                 "<Leader>",
                 "e",
-                "m"
+                "t"
             ],
             "commands": [
                 "editor.emmet.action.matchTag"
@@ -750,8 +811,7 @@
             "before": [
                 "<Leader>",
                 "e",
-                "n",
-                "p"
+                "n"
             ],
             "commands": [
                 "editor.emmet.action.nextEditPoint"
@@ -761,7 +821,6 @@
             "before": [
                 "<Leader>",
                 "e",
-                "p",
                 "p"
             ],
             "commands": [
@@ -772,8 +831,7 @@
             "before": [
                 "<Leader>",
                 "e",
-                "e",
-                "m"
+                "x"
             ],
             "commands": [
                 "editor.emmet.action.evaluateMathExpression"
@@ -817,8 +875,7 @@
                 "<Leader>",
                 "e",
                 "s",
-                "j",
-                "t"
+                "j"
             ],
             "commands": [
                 "editor.emmet.action.splitJoinTag"
@@ -829,8 +886,7 @@
                 "<Leader>",
                 "e",
                 "u",
-                "i",
-                "s"
+                "i"
             ],
             "commands": [
                 "editor.emmet.action.updateImageSize"
@@ -840,31 +896,6 @@
             "before": [
                 "<Leader>",
                 "e",
-                "s",
-                "n",
-                "i"
-            ],
-            "commands": [
-                "editor.emmet.action.selectNextItem"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "e",
-                "s",
-                "p",
-                "i"
-            ],
-            "commands": [
-                "editor.emmet.action.selectPrevItem"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "e",
-                "t",
                 "c"
             ],
             "commands": [
@@ -876,8 +907,7 @@
                 "<Leader>",
                 "e",
                 "r",
-                "c",
-                "v"
+                "c"
             ],
             "commands": [
                 "editor.emmet.action.reflectCSSValue"
@@ -887,24 +917,10 @@
             "before": [
                 "<Leader>",
                 "e",
-                "w",
-                "w",
-                "a"
+                "w"
             ],
             "commands": [
                 "editor.emmet.action.wrapWithAbbreviation"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "e",
-                "w",
-                "i",
-                "l"
-            ],
-            "commands": [
-                "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
             ]
         }
     ]

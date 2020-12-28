@@ -339,31 +339,26 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ### - Normal Mode
 
-| Status             | Command         | Description                                   |
-| ------------------ | --------------- | --------------------------------------------- |
-| :white_check_mark: | `<leader>` ebi  | Emmet Balance (inward)                        |
-| :white_check_mark: | `<leader>` ebo  | Emmet Balance (outward)                       |
-| :white_check_mark: | `<leader>` ei0  | Emmet Increment by 0.1                        |
-| :white_check_mark: | `<leader>` ed0  | Emmet Decrement by 0.1                        |
-| :white_check_mark: | `<leader>` eiu  | Emmet Increment by 1                          |
-| :white_check_mark: | `<leader>` edu  | Emmet Decrement by 1                          |
-| :white_check_mark: | `<leader>` eid  | Emmet Increment by 10                         |
-| :white_check_mark: | `<leader>` edd  | Emmet Decrement by 10                         |
-| :white_check_mark: | `<leader>` em   | Emmet Go To Matching Pair                     |
-| :white_check_mark: | `<leader>` enp  | Emmet Go To Next Edit Point                   |
-| :white_check_mark: | `<leader>` epp  | Emmet Go To Previous Edit Point               |
-| :white_check_mark: | `<leader>` eem  | Emmet Evaluate Math Expression                |
-| :white_check_mark: | `<leader>` eml  | Emmet Merge Lines                             |
-| :white_check_mark: | `<leader>` eut  | Emmet Update Tag                              |
-| :white_check_mark: | `<leader>` ert  | Emmet Remove Tag                              |
-| :white_check_mark: | `<leader>` esjt | Emmet Split / Join Tag                        |
-| :white_check_mark: | `<leader>` euis | Emmet Update Image Size                       |
-| :white_check_mark: | `<leader>` esni | Emmet Select Next Item                        |
-| :white_check_mark: | `<leader>` espi | Emmet Select Previous Item                    |
-| :white_check_mark: | `<leader>` etc  | Emmet Toggle Comment                          |
-| :white_check_mark: | `<leader>` ercv | Emmet Reflect CSS Value                       |
-| :white_check_mark: | `<leader>` ewwa | Emmet Wrap with Abbreviation                  |
-| :white_check_mark: | `<leader>` gwil | Emmet Wrap Individual Lines with Abbreviation |
+| Status             | Command        | Description                     |
+| ------------------ | -------------- | ------------------------------- |
+| :white_check_mark: | `<leader>` ei0 | Emmet Increment by 0.1          |
+| :white_check_mark: | `<leader>` ed0 | Emmet Decrement by 0.1          |
+| :white_check_mark: | `<leader>` eiu | Emmet Increment by 1            |
+| :white_check_mark: | `<leader>` edu | Emmet Decrement by 1            |
+| :white_check_mark: | `<leader>` eid | Emmet Increment by 10           |
+| :white_check_mark: | `<leader>` edd | Emmet Decrement by 10           |
+| :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair       |
+| :white_check_mark: | `<leader>` enp | Emmet Go To Next Edit Point     |
+| :white_check_mark: | `<leader>` epp | Emmet Go To Previous Edit Point |
+| :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression  |
+| :white_check_mark: | `<leader>` eml | Emmet Merge Lines               |
+| :white_check_mark: | `<leader>` eut | Emmet Update Tag                |
+| :white_check_mark: | `<leader>` ert | Emmet Remove Tag                |
+| :white_check_mark: | `<leader>` esj | Emmet Split / Join Tag          |
+| :white_check_mark: | `<leader>` eui | Emmet Update Image Size         |
+| :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment            |
+| :white_check_mark: | `<leader>` erc | Emmet Reflect CSS Value         |
+| :white_check_mark: | `<leader>` ew  | Emmet Wrap with Abbreviation    |
 
 <br>
 <details>
@@ -373,7 +368,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ```json
 {
-	"vim.visualModeKeyBindingsNonRecursive": [
+	"vim.normalModeKeyBindingsNonRecursive": [
 		{
 			"before": ["<Leader>", "e", "b", "i"],
 			"commands": ["editor.emmet.action.balanceIn"]
@@ -407,19 +402,19 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.emmet.action.decrementNumberByTen"]
 		},
 		{
-			"before": ["<Leader>", "e", "m"],
+			"before": ["<Leader>", "e", "t"],
 			"commands": ["editor.emmet.action.matchTag"]
 		},
 		{
-			"before": ["<Leader>", "e", "n", "p"],
+			"before": ["<Leader>", "e", "n"],
 			"commands": ["editor.emmet.action.nextEditPoint"]
 		},
 		{
-			"before": ["<Leader>", "e", "p", "p"],
+			"before": ["<Leader>", "e", "p"],
 			"commands": ["editor.emmet.action.prevEditPoint"]
 		},
 		{
-			"before": ["<Leader>", "e", "e", "m"],
+			"before": ["<Leader>", "e", "x"],
 			"commands": ["editor.emmet.action.evaluateMathExpression"]
 		},
 		{
@@ -435,35 +430,87 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.emmet.action.removeTag"]
 		},
 		{
-			"before": ["<Leader>", "e", "s", "j", "t"],
+			"before": ["<Leader>", "e", "s", "j"],
 			"commands": ["editor.emmet.action.splitJoinTag"]
 		},
 		{
-			"before": ["<Leader>", "e", "u", "i", "s"],
+			"before": ["<Leader>", "e", "u", "i"],
 			"commands": ["editor.emmet.action.updateImageSize"]
 		},
 		{
-			"before": ["<Leader>", "e", "s", "n", "i"],
-			"commands": ["editor.emmet.action.selectNextItem"]
-		},
-		{
-			"before": ["<Leader>", "e", "s", "p", "i"],
-			"commands": ["editor.emmet.action.selectPrevItem"]
-		},
-		{
-			"before": ["<Leader>", "e", "t", "c"],
+			"before": ["<Leader>", "e", "c"],
 			"commands": ["editor.emmet.action.toggleComment"]
 		},
 		{
-			"before": ["<Leader>", "e", "r", "c", "v"],
+			"before": ["<Leader>", "e", "r", "c"],
 			"commands": ["editor.emmet.action.reflectCSSValue"]
 		},
 		{
-			"before": ["<Leader>", "e", "w", "w", "a"],
+			"before": ["<Leader>", "e", "w"],
 			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### - Visual Mode
+
+in visual mode
+
+| Status             | Command        | Description                                   |
+| ------------------ | -------------- | --------------------------------------------- |
+| :white_check_mark: | `<leader>` ebi | Emmet Balance (inward)                        |
+| :white_check_mark: | `<leader>` ebo | Emmet Balance (outward)                       |
+| :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair                     |
+| :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment                          |
+| :white_check_mark: | `<leader>` en  | Emmet Select Next Item                        |
+| :white_check_mark: | `<leader>` ep  | Emmet Select Previous Item                    |
+| :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression                |
+| :white_check_mark: | `<leader>` ew  | Emmet Wrap Individual Lines with Abbreviation |
+
+<br>
+<details>
+ <summary><strong>Quick Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "e", "b", "i"],
+			"commands": ["editor.emmet.action.balanceIn"]
 		},
 		{
-			"before": ["<Leader>", "e", "w", "i", "l"],
+			"before": ["<Leader>", "e", "b", "o"],
+			"commands": ["editor.emmet.action.balanceOut"]
+		},
+		{
+			"before": ["<Leader>", "e", "t"],
+			"commands": ["editor.emmet.action.matchTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "c"],
+			"commands": ["editor.emmet.action.toggleComment"]
+		},
+		{
+			"before": ["<Leader>", "e", "n"],
+			"commands": ["editor.emmet.action.selectNextItem"]
+		},
+		{
+			"before": ["<Leader>", "e", "p"],
+			"commands": ["editor.emmet.action.selectPrevItem"]
+		},
+		{
+			"before": ["<Leader>", "e", "x"],
+			"commands": ["editor.emmet.action.evaluateMathExpression"]
+		},
+		{
+			"before": ["<Leader>", "e", "w"],
 			"commands": [
 				"editor.emmet.action.wrapIndividualLinesWithAbbreviation"
 			]
