@@ -1,5 +1,6 @@
 {
     "vim.visualModeKeyBindingsNonRecursive": [
+        // Git
         {
             "before": [
                 "<Leader>",
@@ -32,6 +33,7 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        // Git
         {
             "before": [
                 "leader",
@@ -643,6 +645,266 @@
             ],
             "commands": [
                 "git.openFile"
+            ]
+        },
+        // Emmet
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "b",
+                "i"
+            ],
+            "commands": [
+                "editor.emmet.action.balanceIn"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "b",
+                "o"
+            ],
+            "commands": [
+                "editor.emmet.action.balanceOut"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "i",
+                "0"
+            ],
+            "commands": [
+                "editor.emmet.action.incrementNumberByOneTenth"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "d",
+                "0"
+            ],
+            "commands": [
+                "editor.emmet.action.decrementNumberByOneTenth"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "i",
+                "u"
+            ],
+            "commands": [
+                "editor.emmet.action.incrementNumberByOne"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "d",
+                "u"
+            ],
+            "commands": [
+                "editor.emmet.action.decrementNumberByOne"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "i",
+                "d"
+            ],
+            "commands": [
+                "editor.emmet.action.incrementNumberByTen"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "d",
+                "d"
+            ],
+            "commands": [
+                "editor.emmet.action.decrementNumberByTen"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "m"
+            ],
+            "commands": [
+                "editor.emmet.action.matchTag"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "n",
+                "p"
+            ],
+            "commands": [
+                "editor.emmet.action.nextEditPoint"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "p",
+                "p"
+            ],
+            "commands": [
+                "editor.emmet.action.prevEditPoint"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "e",
+                "m"
+            ],
+            "commands": [
+                "editor.emmet.action.evaluateMathExpression"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "m",
+                "l"
+            ],
+            "commands": [
+                "editor.emmet.action.mergeLines"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "u",
+                "t"
+            ],
+            "commands": [
+                "editor.emmet.action.updateTag"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "r",
+                "t"
+            ],
+            "commands": [
+                "editor.emmet.action.removeTag"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "s",
+                "j",
+                "t"
+            ],
+            "commands": [
+                "editor.emmet.action.splitJoinTag"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "u",
+                "i",
+                "s"
+            ],
+            "commands": [
+                "editor.emmet.action.updateImageSize"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "s",
+                "n",
+                "i"
+            ],
+            "commands": [
+                "editor.emmet.action.selectNextItem"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "s",
+                "p",
+                "i"
+            ],
+            "commands": [
+                "editor.emmet.action.selectPrevItem"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "t",
+                "c"
+            ],
+            "commands": [
+                "editor.emmet.action.toggleComment"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "r",
+                "c",
+                "v"
+            ],
+            "commands": [
+                "editor.emmet.action.reflectCSSValue"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "w",
+                "w",
+                "a"
+            ],
+            "commands": [
+                "editor.emmet.action.wrapWithAbbreviation"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "e",
+                "w",
+                "i",
+                "l"
+            ],
+            "commands": [
+                "editor.emmet.action.wrapIndividualLinesWithAbbreviation"
             ]
         }
     ]
