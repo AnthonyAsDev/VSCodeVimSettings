@@ -9,7 +9,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code + Commands
 | Status             | Command          | Description                       |
 | ------------------ | ---------------- | --------------------------------- |
 | :white_check_mark: | `<leader>` gg    | Focus On Source Control View      |
-| :white_check_mark: | `<leader>` gtl    | Focus On Timeline View            |
+| :white_check_mark: | `<leader>` gtl   | Focus On Timeline View            |
 | :white_check_mark: | `<leader>` gir   | Git Initialize Repository         |
 | :white_check_mark: | `<leader>` gai   | Git Add To .gitignore             |
 | :white_check_mark: | `<leader>` gar   | Git Add Remote                    |
@@ -519,6 +519,159 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": [
 				"editor.emmet.action.wrapIndividualLinesWithAbbreviation"
 			]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+## VSCode Commands
+
+### - Normal Mode
+
+| Status             | Command        | Description                |
+| ------------------ | -------------- | -------------------------- |
+| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer    |
+| :white_check_mark: | `<leader>` a   | Source Action              |
+| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility |
+| :white_check_mark: | `<leader>` d   | Duplicate Selection        |
+| :white_check_mark: | `<leader>` f   | Format Document            |
+| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor     |
+| :white_check_mark: | `<leader>` o   | Go To File In Editor       |
+| :white_check_mark: | `<leader>` p   | Show All Commands          |
+| :white_check_mark: | `<leader>` mn  | Go To Next Problem         |
+| :white_check_mark: | `<leader>` mp  | Go To Previous Problem     |
+| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task      |
+| :white_check_mark: | `<leader>` tc  | Tasks Configure Task       |
+| :white_check_mark: | `<leader>` vii | Increase Current View Size |
+| :white_check_mark: | `<leader>` vdd | Decrease Current View Size |
+| :white_check_mark: | `<leader>` vih | Increase Editor Height     |
+| :white_check_mark: | `<leader>` vdh | Decrease Editor Height     |
+| :white_check_mark: | `<leader>` viw | Increase Editor Width      |
+| :white_check_mark: | `<leader>` vdw | Decrease Editor Width      |
+
+<br>
+<details>
+ <summary><strong>Quick Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "e", "e"],
+			"commands": ["workbench.explorer.fileView.focus"]
+		},
+		{
+			"before": ["<Leader>", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["<Leader>", "s"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<Leader>", "d"],
+			"commands": ["editor.action.duplicateSelection"]
+		},
+		{
+			"before": ["<Leader>", "f"],
+			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["<Leader>", "t"],
+			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<Leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<Leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "i"],
+			"commands": ["workbench.action.increaseViewSize"]
+		},
+		{
+			"before": ["<Leader>", "v", "d", "d"],
+			"commands": ["workbench.action.decreaseViewSize"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "h"],
+			"commands": ["workbench.action.increaseViewHeight"]
+		},
+		{
+			"before": ["<Leader>", "v", "d", "h"],
+			"commands": ["workbench.action.decreaseViewHeight"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "w"],
+			"commands": ["workbench.action.increaseViewWidth"]
+		},
+		{
+			"before": ["<Leader>", "v", "d", "w"],
+			"commands": ["workbench.action.decreaseViewWidth"]
+		},
+		{
+			"before": ["<Leader>", "m", "n"],
+			"commands": ["editor.action.marker.next"]
+		},
+		{
+			"before": ["<Leader>", "m", "p"],
+			"commands": ["editor.action.marker.prev"]
+		},
+		{
+			"before": ["<Leader>", "t", "r"],
+			"commands": ["workbench.action.tasks.reRunTask"]
+		},
+		{
+			"before": ["<Leader>", "t", "c"],
+			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### - Visual Mode
+
+in visual mode
+
+| Status             | Command           | Description      |
+| ------------------ | ----------------- | ---------------- |
+| :white_check_mark: | `<leader>` f      | Format Selection |
+| :white_check_mark: | `<leader>` CTRL j | Move Line Up     |
+| :white_check_mark: | `<leader>` CTRL k | Move Line Down   |
+
+<br>
+<details>
+ <summary><strong>Quick Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "f"],
+			"commands": ["editor.action.formatSelection"]
+		},
+		{
+			"before": ["<C-j>"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["<C-k>"],
+			"commands": ["editor.action.moveLinesUpAction"]
 		}
 	]
 }
