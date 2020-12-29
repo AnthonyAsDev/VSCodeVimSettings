@@ -534,37 +534,36 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ### - Normal Mode
 
-| Status             | Command        | Description                |
-| ------------------ | -------------- | -------------------------- |
-| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer    |
-| :white_check_mark: | `<leader>` a   | Source Action              |
-| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility |
-| :white_check_mark: | `<leader>` d   | Duplicate Selection        |
-| :white_check_mark: | `<leader>` f   | Format Document            |
-| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor     |
-| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes  |
-| :white_check_mark: | `<leader>` o   | Go To File In Editor       |
-| :white_check_mark: | `<leader>` p   | Show All Commands          |
-| :white_check_mark: | `<leader>` mn  | Go To Next Problem         |
-| :white_check_mark: | `<leader>` mp  | Go To Previous Problem     |
-| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task      |
-| :white_check_mark: | `<leader>` tc  | Tasks Configure Task       |
-| :white_check_mark: | `<leader>` vii | Increase Current View Size |
-| :white_check_mark: | `<leader>` vdd | Decrease Current View Size |
-| :white_check_mark: | `<leader>` vih | Increase Editor Height     |
-| :white_check_mark: | `<leader>` vdh | Decrease Editor Height     |
-| :white_check_mark: | `<leader>` viw | Increase Editor Width      |
-| :white_check_mark: | `<leader>` vdw | Decrease Editor Width      |
-
-| :white_check_mark: | `<leader>` vj | View Move Editor Group Down |
-| :white_check_mark: | `<leader>` vk | View Move Editor Group Up |
-| :white_check_mark: | `<leader>` vh | View Move Editor Group Left |
-| :white_check_mark: | `<leader>` vl | View Move Editor Group Right |
-| :white_check_mark: | `<leader>` tn | View Open Next Editor |
-| :white_check_mark: | `<leader>` tp | View Open Previous Editor |
-| :white_check_mark: | `<leader>` tt | File New Untitled File |
-| :white_check_mark: | `<leader>` to | View Close Other Editors In Group |
-| :white_check_mark: | `<leader>` ta | View Close Editors In Other Groups |
+| Status             | Command        | Description                        |
+| ------------------ | -------------- | ---------------------------------- |
+| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer            |
+| :white_check_mark: | `<leader>` a   | Source Action                      |
+| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility         |
+| :white_check_mark: | `<leader>` d   | Duplicate Selection                |
+| :white_check_mark: | `<leader>` f   | Format Document                    |
+| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor             |
+| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes          |
+| :white_check_mark: | `<leader>` o   | Go To File In Editor               |
+| :white_check_mark: | `<leader>` p   | Show All Commands                  |
+| :white_check_mark: | `<leader>` mn  | Go To Next Problem                 |
+| :white_check_mark: | `<leader>` mp  | Go To Previous Problem             |
+| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task              |
+| :white_check_mark: | `<leader>` tc  | Tasks Configure Task               |
+| :white_check_mark: | `<leader>` vii | Increase Current View Size         |
+| :white_check_mark: | `<leader>` vdd | Decrease Current View Size         |
+| :white_check_mark: | `<leader>` vih | Increase Editor Height             |
+| :white_check_mark: | `<leader>` vdh | Decrease Editor Height             |
+| :white_check_mark: | `<leader>` viw | Increase Editor Width              |
+| :white_check_mark: | `<leader>` vdw | Decrease Editor Width              |
+| :white_check_mark: | `<leader>` vj  | View Move Editor Group Down        |
+| :white_check_mark: | `<leader>` vk  | View Move Editor Group Up          |
+| :white_check_mark: | `<leader>` vh  | View Move Editor Group Left        |
+| :white_check_mark: | `<leader>` vl  | View Move Editor Group Right       |
+| :white_check_mark: | `<leader>` tn  | View Open Next Editor              |
+| :white_check_mark: | `<leader>` tp  | View Open Previous Editor          |
+| :white_check_mark: | `<leader>` tt  | File New Untitled File             |
+| :white_check_mark: | `<leader>` to  | View Close Other Editors In Group  |
+| :white_check_mark: | `<leader>` ta  | View Close Editors In Other Groups |
 
 <br>
 <details>
@@ -746,6 +745,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` q | Close Editor                  |
 | :white_check_mark: | K            | Move 5 Line Up                |
 | :white_check_mark: | J            | Move 5 Line Down              |
+| :white_check_mark: | CTRL n       | Turn Off Search Highlighting  |
 | :white_check_mark: | CTRL j       | View Focus Above Editor Group |
 | :white_check_mark: | CTRL k       | View Focus Below Editor Group |
 | :white_check_mark: | CTRL h       | View Focus Left Editor Group  |
