@@ -946,6 +946,26 @@
                 "git.openFile"
             ]
         },
+        {
+            "before": [
+                "leader",
+                "g",
+                "n"
+            ],
+            "commands": [
+                "editor.action.dirtydiff.next"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "g",
+                "N"
+            ],
+            "commands": [
+                "editor.action.dirtydiff.previous"
+            ]
+        },
         // Emmet
         {
             "before": [

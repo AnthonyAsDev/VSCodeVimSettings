@@ -1,4 +1,5 @@
 [
+    // File Explorer
     {
         "key": "a",
         "command": "explorer.newFile",
@@ -69,19 +70,41 @@
         "command": "-renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
+    // VSCode
     {
-        "key": "o",
-        "command": "workbench.action.focusNextPart",
-        "when": "timelineFollowActiveEditor && !inputFocus"
+        "key": "j",
+        "command": "cursorDown",
+        "when": "listFocus && editorFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "cursorUp",
+        "when": "listFocus && editorFocus && !inputFocus"
     },
     {
         "key": "e",
         "command": "workbench.explorer.fileView.focus",
         "when": "!editorFocus && !inputFocus"
     },
+    // Git
     {
         "key": "g",
         "command": "workbench.scm.focus",
         "when": "!editorFocus && !inputFocus"
+    },
+    {
+        "key": "o",
+        "command": "workbench.action.focusNextPart",
+        "when": "timelineFollowActiveEditor && !inputFocus"
+    },
+    {
+        "key": "n",
+        "command": "editor.action.diffReview.next",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "shift+n",
+        "command": "editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
     }
 ]

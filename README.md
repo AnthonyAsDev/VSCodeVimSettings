@@ -63,6 +63,8 @@ VSCodeVim is a Vim emulator for Visual Studio Code + Commands
 | :white_check_mark: | `<leader>` gffar | Git Fetch From All Remotes        |
 | :white_check_mark: | `<leader>` goc   | Git Open Changes                  |
 | :white_check_mark: | `<leader>` gof   | Git Open File                     |
+| :white_check_mark: | `<leader>` gn    | Git Show Next Change              |
+| :white_check_mark: | `<leader>` gN    | Git Show Previous Change          |
 
 <br>
 <details>
