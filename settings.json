@@ -1,5 +1,42 @@
 {
     "vim.visualModeKeyBindingsNonRecursive": [
+        // Vim Shortcuts
+        {
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
         // VSCode Shortcuts
         {
             "before": [
@@ -142,6 +179,146 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        // Vim Shortcuts
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<C-w>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<C-w>",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "t"
+            ],
+            "commands": [
+                ":tabnew"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "n"
+            ],
+            "commands": [
+                ":tabnext"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "p"
+            ],
+            "commands": [
+                ":tabprev"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "o"
+            ],
+            "commands": [
+                ":tabo"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+        // VSCode Shortcuts
         {
             "before": [
                 "<Leader>",
@@ -328,6 +505,96 @@
             ],
             "commands": [
                 "workbench.action.tasks.configureTaskRunner"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "v",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.moveActiveEditorGroupDown"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "v",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.moveActiveEditorGroupUp"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "v",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.moveActiveEditorGroupLeft"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "v",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.moveActiveEditorGroupRight"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "p"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.files.newUntitledFile"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.closeOtherEditors"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "t",
+                "a"
+            ],
+            "commands": [
+                "workbench.action.closeEditorsInOtherGroups"
             ]
         },
         // Git

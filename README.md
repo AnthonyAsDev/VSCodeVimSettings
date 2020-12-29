@@ -530,7 +530,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-## VSCode Commands
+## VSCode Shortcuts
 
 ### - Normal Mode
 
@@ -555,6 +555,16 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` vdh | Decrease Editor Height     |
 | :white_check_mark: | `<leader>` viw | Increase Editor Width      |
 | :white_check_mark: | `<leader>` vdw | Decrease Editor Width      |
+
+| :white_check_mark: | `<leader>` vj | View Move Editor Group Down |
+| :white_check_mark: | `<leader>` vk | View Move Editor Group Up |
+| :white_check_mark: | `<leader>` vh | View Move Editor Group Left |
+| :white_check_mark: | `<leader>` vl | View Move Editor Group Right |
+| :white_check_mark: | `<leader>` tn | View Open Next Editor |
+| :white_check_mark: | `<leader>` tp | View Open Previous Editor |
+| :white_check_mark: | `<leader>` tt | File New Untitled File |
+| :white_check_mark: | `<leader>` to | View Close Other Editors In Group |
+| :white_check_mark: | `<leader>` ta | View Close Editors In Other Groups |
 
 <br>
 <details>
@@ -640,6 +650,42 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "t", "c"],
 			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		},
+		{
+			"before": ["<Leader>", "v", "j"],
+			"commands": ["workbench.action.moveActiveEditorGroupDown"]
+		},
+		{
+			"before": ["<Leader>", "v", "k"],
+			"commands": ["workbench.action.moveActiveEditorGroupUp"]
+		},
+		{
+			"before": ["<Leader>", "v", "h"],
+			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
+		},
+		{
+			"before": ["<Leader>", "v", "l"],
+			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+		},
+		{
+			"before": ["<Leader>", "t", "t"],
+			"commands": ["workbench.action.files.newUntitledFile"]
+		},
+		{
+			"before": ["<Leader>", "t", "n"],
+			"commands": ["workbench.action.nextEditor"]
+		},
+		{
+			"before": ["<Leader>", "t", "p"],
+			"commands": ["workbench.action.previousEditor"]
+		},
+		{
+			"before": ["<Leader>", "t", "o"],
+			"commands": ["workbench.action.closeOtherEditors"]
+		},
+		{
+			"before": ["<Leader>", "t", "a"],
+			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		}
 	]
 }
@@ -679,6 +725,144 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<C-k>"],
 			"commands": ["editor.action.moveLinesUpAction"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+## Vim Shortcuts
+
+### - Normal Mode
+
+| Status             | Command      | Description                   |
+| ------------------ | ------------ | ----------------------------- |
+| :white_check_mark: | `<leader>` l | Last Character In The Line    |
+| :white_check_mark: | `<leader>` h | First Character In The Line   |
+| :white_check_mark: | `<leader>` w | File Save                     |
+| :white_check_mark: | `<leader>` q | Close Editor                  |
+| :white_check_mark: | K            | Move 5 Line Up                |
+| :white_check_mark: | J            | Move 5 Line Down              |
+| :white_check_mark: | CTRL j       | View Focus Above Editor Group |
+| :white_check_mark: | CTRL k       | View Focus Below Editor Group |
+| :white_check_mark: | CTRL h       | View Focus Left Editor Group  |
+| :white_check_mark: | CTRL l       | View Focus Right Editor Group |
+
+<br>
+<details>
+ <summary><strong>Quick Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		},
+		{
+			"before": ["<Leader>", "l"],
+			"after": ["$"]
+		},
+		{
+			"before": ["<Leader>", "h"],
+			"after": ["^"]
+		},
+		{
+			"before": ["<C-n>"],
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["<C-h>"],
+			"after": ["<C-w>", "h"]
+		},
+		{
+			"before": ["<C-j>"],
+			"after": ["<C-w>", "j"]
+		},
+		{
+			"before": ["<C-k>"],
+			"after": ["<C-w>", "k"]
+		},
+		{
+			"before": ["<C-l>"],
+			"after": ["<C-w>", "l"]
+		},
+		{
+			"before": ["<Leader>", "t", "t"],
+			"commands": [":tabnew"]
+		},
+		{
+			"before": ["<Leader>", "t", "n"],
+			"commands": [":tabnext"]
+		},
+		{
+			"before": ["<Leader>", "t", "p"],
+			"commands": [":tabprev"]
+		},
+		{
+			"before": ["<Leader>", "t", "o"],
+			"commands": [":tabo"]
+		},
+		{
+			"before": ["leader", "q"],
+			"commands": [":q"]
+		},
+		{
+			"before": ["leader", "w"],
+			"commands": [":w"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### - Visual Mode
+
+in visual mode
+
+| Status             | Command      | Description                 |
+| ------------------ | ------------ | --------------------------- |
+| :white_check_mark: | `<leader>` l | Last Character In The Line  |
+| :white_check_mark: | `<leader>` h | First Character In The Line |
+| :white_check_mark: | `<leader>` J | Move 5 Line Down            |
+| :white_check_mark: | `<leader>` K | Move 5 Line Up              |
+
+<br>
+<details>
+ <summary><strong>Quick Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "l"],
+			"after": ["$"]
+		},
+		{
+			"before": ["<Leader>", "h"],
+			"after": ["^"]
+		},
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
 		}
 	]
 }
