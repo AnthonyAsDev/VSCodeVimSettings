@@ -542,6 +542,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` d   | Duplicate Selection        |
 | :white_check_mark: | `<leader>` f   | Format Document            |
 | :white_check_mark: | `<leader>` t   | Go To Symbol In Editor     |
+| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes  |
 | :white_check_mark: | `<leader>` o   | Go To File In Editor       |
 | :white_check_mark: | `<leader>` p   | Show All Commands          |
 | :white_check_mark: | `<leader>` mn  | Go To Next Problem         |
@@ -587,6 +588,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "t"],
 			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<Leader>", "i"],
+			"commands": ["workbench.action.toggleEditorWidths"]
 		},
 		{
 			"before": ["<Leader>", "o"],

@@ -200,6 +200,15 @@
         {
             "before": [
                 "<Leader>",
+                "i"
+            ],
+            "commands": [
+                "workbench.action.toggleEditorWidths"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
                 "o"
             ],
             "commands": [
