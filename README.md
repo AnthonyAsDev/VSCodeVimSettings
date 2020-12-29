@@ -542,6 +542,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` d   | Duplicate Selection                |
 | :white_check_mark: | `<leader>` f   | Format Document                    |
 | :white_check_mark: | `<leader>` t   | Go To Symbol In Editor             |
+| :white_check_mark: | `<leader>` u   | Transform To Title Case            |
 | :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes          |
 | :white_check_mark: | `<leader>` o   | Go To File In Editor               |
 | :white_check_mark: | `<leader>` p   | Show All Commands                  |
@@ -597,6 +598,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "t"],
 			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
 		},
 		{
 			"before": ["<Leader>", "i"],
@@ -698,11 +703,12 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 in visual mode
 
-| Status             | Command           | Description      |
-| ------------------ | ----------------- | ---------------- |
-| :white_check_mark: | `<leader>` f      | Format Selection |
-| :white_check_mark: | `<leader>` CTRL j | Move Line Up     |
-| :white_check_mark: | `<leader>` CTRL k | Move Line Down   |
+| Status             | Command           | Description             |
+| ------------------ | ----------------- | ----------------------- |
+| :white_check_mark: | `<leader>` f      | Format Selection        |
+| :white_check_mark: | `<leader>` u      | Transform To Title Case |
+| :white_check_mark: | `<leader>` CTRL j | Move Line Up            |
+| :white_check_mark: | `<leader>` CTRL k | Move Line Down          |
 
 <br>
 <details>
@@ -716,6 +722,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "f"],
 			"commands": ["editor.action.formatSelection"]
+		},
+		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
 		},
 		{
 			"before": ["<C-j>"],

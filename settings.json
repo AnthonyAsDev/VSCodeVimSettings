@@ -23,6 +23,10 @@
 			"commands": ["editor.action.formatSelection"]
 		},
 		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
+		},
+		{
 			"before": ["<C-j>"],
 			"commands": ["editor.action.moveLinesDownAction"]
 		},
@@ -165,6 +169,10 @@
 		{
 			"before": ["<Leader>", "t"],
 			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
 		},
 		{
 			"before": ["<Leader>", "i"],
