@@ -4,7 +4,9 @@ VSCodeVim is a Vim emulator for Visual Studio Code + Commands
 
 ## Git Commands
 
-### - Normal Mode
+Git is a distributed version-control system for tracking changes in any set of files, originally designed for coordinating work among programmers cooperating on source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+
+### Normal Mode
 
 | Status             | Command          | Description                       |
 | ------------------ | ---------------- | --------------------------------- |
@@ -68,7 +70,7 @@ VSCodeVim is a Vim emulator for Visual Studio Code + Commands
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -303,9 +305,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-### - Visual Mode
-
-in visual mode
+### Visual Mode
 
 | Status             | Command       | Description                 |
 | ------------------ | ------------- | --------------------------- |
@@ -315,7 +315,7 @@ in visual mode
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -344,7 +344,9 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ## Emmet Commands
 
-### - Normal Mode
+Emmet allows you to write large HTML code blocks at speed of light using well-known CSS selectors. But it’s not the only thing that every web-developer needs: occasionally you have to edit your HTML and CSS code to fix bugs and add new features.
+
+### Normal Mode
 
 | Status             | Command        | Description                     |
 | ------------------ | -------------- | ------------------------------- |
@@ -369,7 +371,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -464,9 +466,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-### - Visual Mode
-
-in visual mode
+### Visual Mode
 
 | Status             | Command        | Description                                   |
 | ------------------ | -------------- | --------------------------------------------- |
@@ -481,7 +481,7 @@ in visual mode
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -532,7 +532,9 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ## VSCode Shortcuts
 
-### - Normal Mode
+Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+
+### Normal Mode
 
 | Status             | Command        | Description                        |
 | ------------------ | -------------- | ---------------------------------- |
@@ -568,7 +570,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -699,9 +701,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-### - Visual Mode
-
-in visual mode
+### Visual Mode
 
 | Status             | Command           | Description             |
 | ------------------ | ----------------- | ----------------------- |
@@ -712,7 +712,7 @@ in visual mode
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -745,7 +745,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ## Vim Shortcuts
 
-### - Normal Mode
+### Normal Mode
 
 | Status             | Command      | Description                   |
 | ------------------ | ------------ | ----------------------------- |
@@ -763,7 +763,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
@@ -822,9 +822,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-### - Visual Mode
-
-in visual mode
+### Visual Mode
 
 | Status             | Command      | Description                 |
 | ------------------ | ------------ | --------------------------- |
@@ -835,7 +833,7 @@ in visual mode
 
 <br>
 <details>
- <summary><strong>Quick Example</strong> (click to expand)</summary>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
 
 Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
 
