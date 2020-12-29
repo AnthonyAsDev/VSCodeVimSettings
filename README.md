@@ -746,8 +746,6 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | K            | Move 5 Line Up                |
 | :white_check_mark: | J            | Move 5 Line Down              |
 | :white_check_mark: | CTRL n       | Turn Off Search Highlighting  |
-| :white_check_mark: | K            | Move 5 Line Up                |
-| :white_check_mark: | J            | Move 5 Line Down              |
 | :white_check_mark: | CTRL j       | View Focus Above Editor Group |
 | :white_check_mark: | CTRL k       | View Focus Below Editor Group |
 | :white_check_mark: | CTRL h       | View Focus Left Editor Group  |
