@@ -69,7 +69,7 @@
 			"commands": ["editor.emmet.action.selectNextItem"]
 		},
 		{
-			"before": ["<Leader>", "e", "p"],
+			"before": ["<Leader>", "e", "N"],
 			"commands": ["editor.emmet.action.selectPrevItem"]
 		},
 		{
@@ -215,7 +215,7 @@
 			"commands": ["editor.action.marker.next"]
 		},
 		{
-			"before": ["<Leader>", "m", "p"],
+			"before": ["<Leader>", "m", "N"],
 			"commands": ["editor.action.marker.prev"]
 		},
 		{
@@ -247,7 +247,7 @@
 			"commands": ["workbench.action.nextEditor"]
 		},
 		{
-			"before": ["<Leader>", "t", "p"],
+			"before": ["<Leader>", "t", "N"],
 			"commands": ["workbench.action.previousEditor"]
 		},
 		{
@@ -537,7 +537,7 @@
 			"commands": ["editor.emmet.action.nextEditPoint"]
 		},
 		{
-			"before": ["<Leader>", "e", "p"],
+			"before": ["<Leader>", "e", "N"],
 			"commands": ["editor.emmet.action.prevEditPoint"]
 		},
 		{

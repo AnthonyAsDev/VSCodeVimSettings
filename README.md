@@ -380,8 +380,8 @@ Emmet allows you to write large HTML code blocks at speed of light using well-kn
 | :white_check_mark: | `<leader>` eid | Emmet Increment by 10           |
 | :white_check_mark: | `<leader>` edd | Emmet Decrement by 10           |
 | :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair       |
-| :white_check_mark: | `<leader>` enp | Emmet Go To Next Edit Point     |
-| :white_check_mark: | `<leader>` epp | Emmet Go To Previous Edit Point |
+| :white_check_mark: | `<leader>` en  | Emmet Go To Next Edit Point     |
+| :white_check_mark: | `<leader>` eN  | Emmet Go To Previous Edit Point |
 | :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression  |
 | :white_check_mark: | `<leader>` eml | Emmet Merge Lines               |
 | :white_check_mark: | `<leader>` eut | Emmet Update Tag                |
@@ -442,7 +442,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.emmet.action.nextEditPoint"]
 		},
 		{
-			"before": ["<Leader>", "e", "p"],
+			"before": ["<Leader>", "e", "N"],
 			"commands": ["editor.emmet.action.prevEditPoint"]
 		},
 		{
@@ -498,7 +498,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair                     |
 | :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment                          |
 | :white_check_mark: | `<leader>` en  | Emmet Select Next Item                        |
-| :white_check_mark: | `<leader>` ep  | Emmet Select Previous Item                    |
+| :white_check_mark: | `<leader>` eN  | Emmet Select Previous Item                    |
 | :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression                |
 | :white_check_mark: | `<leader>` ew  | Emmet Wrap Individual Lines with Abbreviation |
 
@@ -532,7 +532,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.emmet.action.selectNextItem"]
 		},
 		{
-			"before": ["<Leader>", "e", "p"],
+			"before": ["<Leader>", "e", "N"],
 			"commands": ["editor.emmet.action.selectPrevItem"]
 		},
 		{
@@ -572,7 +572,7 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | :white_check_mark: | `<leader>` o   | Go To File In Editor               |
 | :white_check_mark: | `<leader>` p   | Show All Commands                  |
 | :white_check_mark: | `<leader>` mn  | Go To Next Problem                 |
-| :white_check_mark: | `<leader>` mp  | Go To Previous Problem             |
+| :white_check_mark: | `<leader>` mN  | Go To Previous Problem             |
 | :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task              |
 | :white_check_mark: | `<leader>` tc  | Tasks Configure Task               |
 | :white_check_mark: | `<leader>` vii | Increase Current View Size         |
@@ -586,7 +586,7 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | :white_check_mark: | `<leader>` vh  | View Move Editor Group Left        |
 | :white_check_mark: | `<leader>` vl  | View Move Editor Group Right       |
 | :white_check_mark: | `<leader>` tn  | View Open Next Editor              |
-| :white_check_mark: | `<leader>` tp  | View Open Previous Editor          |
+| :white_check_mark: | `<leader>` tN  | View Open Previous Editor          |
 | :white_check_mark: | `<leader>` tt  | File New Untitled File             |
 | :white_check_mark: | `<leader>` to  | View Close Other Editors In Group  |
 | :white_check_mark: | `<leader>` ta  | View Close Editors In Other Groups |
@@ -669,7 +669,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.action.marker.next"]
 		},
 		{
-			"before": ["<Leader>", "m", "p"],
+			"before": ["<Leader>", "m", "N"],
 			"commands": ["editor.action.marker.prev"]
 		},
 		{
@@ -705,7 +705,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.action.nextEditor"]
 		},
 		{
-			"before": ["<Leader>", "t", "p"],
+			"before": ["<Leader>", "t", "N"],
 			"commands": ["workbench.action.previousEditor"]
 		},
 		{
