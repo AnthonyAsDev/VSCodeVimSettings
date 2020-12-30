@@ -19,12 +19,36 @@
 		},
 		// VSCode Shortcuts
 		{
+			"before": ["<Leader>", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["<Leader>", "s"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<Leader>", "d"],
+			"commands": ["editor.action.duplicateSelection"]
+		},
+		{
 			"before": ["<Leader>", "f"],
 			"commands": ["editor.action.formatSelection"]
 		},
 		{
 			"before": ["<Leader>", "u"],
 			"commands": ["editor.action.transformToTitlecase"]
+		},
+		{
+			"before": ["<Leader>", "i"],
+			"commands": ["workbench.action.toggleEditorWidths"]
+		},
+		{
+			"before": ["<Leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<Leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
 		},
 		{
 			"before": ["<C-j>"],
