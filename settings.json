@@ -484,12 +484,24 @@
 			"commands": ["git.openFile"]
 		},
 		{
-			"before": ["leader", "g", "n"],
+			"before": ["leader", "g", "s", "n"],
 			"commands": ["editor.action.dirtydiff.next"]
 		},
 		{
-			"before": ["leader", "g", "N"],
+			"before": ["leader", "g", "s", "N"],
 			"commands": ["editor.action.dirtydiff.previous"]
+		},
+		{
+			"before": ["leader", "g", "m", "n"],
+			"commands": ["workbench.action.editor.nextChange"]
+		},
+		{
+			"before": ["leader", "g", "m", "N"],
+			"commands": ["workbench.action.editor.previousChange"]
+		},
+		{
+			"before": ["leader", "g", "i", "v"],
+			"commands": ["toggle.diff.renderSideBySide"]
 		},
 		// Emmet
 		{

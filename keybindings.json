@@ -103,8 +103,18 @@
 		"when": "isInDiffEditor"
 	},
 	{
+		"key": "f7",
+		"command": "-editor.action.diffReview.next",
+		"when": "isInDiffEditor"
+	},
+	{
 		"key": "shift+n",
 		"command": "editor.action.diffReview.prev",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "shift+f7",
+		"command": "-editor.action.diffReview.prev",
 		"when": "isInDiffEditor"
 	}
 ]

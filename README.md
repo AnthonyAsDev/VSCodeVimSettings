@@ -65,8 +65,11 @@ Git is a distributed version-control system for tracking changes in any set of f
 | :white_check_mark: | `<leader>` gffar | Git Fetch From All Remotes        |
 | :white_check_mark: | `<leader>` goc   | Git Open Changes                  |
 | :white_check_mark: | `<leader>` gof   | Git Open File                     |
-| :white_check_mark: | `<leader>` gn    | Git Show Next Change              |
-| :white_check_mark: | `<leader>` gN    | Git Show Previous Change          |
+| :white_check_mark: | `<leader>` gsn   | Git Show Next Change              |
+| :white_check_mark: | `<leader>` gsN   | Git Show Previous Change          |
+| :white_check_mark: | `<leader>` gmn   | Git Move To Next Change           |
+| :white_check_mark: | `<leader>` gmN   | Git Move To Previous Change       |
+| :white_check_mark: | `<leader>` giv   | Git Toggle Inline View            |
 
 <br>
 <details>
@@ -296,6 +299,26 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["leader", "g", "o", "f"],
 			"commands": ["git.openFile"]
+		},
+		{
+			"before": ["leader", "g", "s", "n"],
+			"commands": ["editor.action.dirtydiff.next"]
+		},
+		{
+			"before": ["leader", "g", "s", "N"],
+			"commands": ["editor.action.dirtydiff.previous"]
+		},
+		{
+			"before": ["leader", "g", "m", "n"],
+			"commands": ["workbench.action.editor.nextChange"]
+		},
+		{
+			"before": ["leader", "g", "m", "N"],
+			"commands": ["workbench.action.editor.previousChange"]
+		},
+		{
+			"before": ["leader", "g", "i", "v"],
+			"commands": ["toggle.diff.renderSideBySide"]
 		}
 	]
 }
