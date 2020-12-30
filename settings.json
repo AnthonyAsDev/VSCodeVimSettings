@@ -146,22 +146,6 @@
 			"after": ["<C-w>", "l"]
 		},
 		{
-			"before": ["<Leader>", "t", "t"],
-			"commands": [":tabnew"]
-		},
-		{
-			"before": ["<Leader>", "t", "n"],
-			"commands": [":tabnext"]
-		},
-		{
-			"before": ["<Leader>", "t", "p"],
-			"commands": [":tabprev"]
-		},
-		{
-			"before": ["<Leader>", "t", "o"],
-			"commands": [":tabo"]
-		},
-		{
 			"before": ["leader", "q"],
 			"commands": [":q"]
 		},
