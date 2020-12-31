@@ -195,6 +195,22 @@
 			"commands": ["workbench.action.showCommands"]
 		},
 		{
+			"before": ["<Leader>", "m", "n"],
+			"commands": ["editor.action.marker.next"]
+		},
+		{
+			"before": ["<Leader>", "m", "N"],
+			"commands": ["editor.action.marker.prev"]
+		},
+		{
+			"before": ["<Leader>", "t", "r"],
+			"commands": ["workbench.action.tasks.reRunTask"]
+		},
+		{
+			"before": ["<Leader>", "t", "c"],
+			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		},
+		{
 			"before": ["<Leader>", "v", "i", "i"],
 			"commands": ["workbench.action.increaseViewSize"]
 		},
@@ -219,36 +235,8 @@
 			"commands": ["workbench.action.decreaseViewWidth"]
 		},
 		{
-			"before": ["<Leader>", "m", "n"],
-			"commands": ["editor.action.marker.next"]
-		},
-		{
-			"before": ["<Leader>", "m", "N"],
-			"commands": ["editor.action.marker.prev"]
-		},
-		{
-			"before": ["<Leader>", "t", "r"],
-			"commands": ["workbench.action.tasks.reRunTask"]
-		},
-		{
-			"before": ["<Leader>", "t", "c"],
-			"commands": ["workbench.action.tasks.configureTaskRunner"]
-		},
-		{
-			"before": ["<Leader>", "v", "j"],
-			"commands": ["workbench.action.moveActiveEditorGroupDown"]
-		},
-		{
-			"before": ["<Leader>", "v", "k"],
-			"commands": ["workbench.action.moveActiveEditorGroupUp"]
-		},
-		{
-			"before": ["<Leader>", "v", "h"],
-			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
-		},
-		{
-			"before": ["<Leader>", "v", "l"],
-			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+			"before": ["<Leader>", "t", "t"],
+			"commands": ["workbench.action.files.newUntitledFile"]
 		},
 		{
 			"before": ["<Leader>", "t", "n"],
@@ -259,15 +247,55 @@
 			"commands": ["workbench.action.previousEditor"]
 		},
 		{
-			"before": ["<Leader>", "t", "t"],
-			"commands": ["workbench.action.files.newUntitledFile"]
+			"before": ["<Leader>", "v", "g", "j"],
+			"commands": ["workbench.action.moveActiveEditorGroupDown"]
 		},
 		{
-			"before": ["<Leader>", "t", "o"],
+			"before": ["<Leader>", "v", "g", "h"],
+			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "l"],
+			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "k"],
+			"commands": ["workbench.action.moveActiveEditorGroupUp"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "f"],
+			"commands": ["workbench.action.moveEditorToFirstGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "l"],
+			"commands": ["workbench.action.moveEditorToLastGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "n"],
+			"commands": ["workbench.action.moveEditorToNextGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "p"],
+			"commands": ["workbench.action.moveEditorToPreviousGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "e", "h"],
+			"commands": ["workbench.action.moveEditorLeftInGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "e", "l"],
+			"commands": ["workbench.action.moveEditorRightInGroup"]
+		},
+		{
+			"before": ["<Leader>", "c", "e", "g"],
+			"commands": ["workbench.action.closeEditorsAndGroup"]
+		},
+		{
+			"before": ["<Leader>", "c", "o", "e"],
 			"commands": ["workbench.action.closeOtherEditors"]
 		},
 		{
-			"before": ["<Leader>", "t", "a"],
+			"before": ["<Leader>", "c", "e", "o"],
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		},
 		// Git

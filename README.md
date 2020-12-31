@@ -559,37 +559,44 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 
 ### Normal Mode
 
-| Status             | Command        | Description                        |
-| ------------------ | -------------- | ---------------------------------- |
-| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer            |
-| :white_check_mark: | `<leader>` a   | Source Action                      |
-| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility         |
-| :white_check_mark: | `<leader>` d   | Duplicate Selection                |
-| :white_check_mark: | `<leader>` f   | Format Document                    |
-| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor             |
-| :white_check_mark: | `<leader>` u   | Transform To Title Case            |
-| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes          |
-| :white_check_mark: | `<leader>` o   | Go To File In Editor               |
-| :white_check_mark: | `<leader>` p   | Show All Commands                  |
-| :white_check_mark: | `<leader>` mn  | Go To Next Problem                 |
-| :white_check_mark: | `<leader>` mN  | Go To Previous Problem             |
-| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task              |
-| :white_check_mark: | `<leader>` tc  | Tasks Configure Task               |
-| :white_check_mark: | `<leader>` vii | Increase Current View Size         |
-| :white_check_mark: | `<leader>` vdd | Decrease Current View Size         |
-| :white_check_mark: | `<leader>` vih | Increase Editor Height             |
-| :white_check_mark: | `<leader>` vdh | Decrease Editor Height             |
-| :white_check_mark: | `<leader>` viw | Increase Editor Width              |
-| :white_check_mark: | `<leader>` vdw | Decrease Editor Width              |
-| :white_check_mark: | `<leader>` vj  | View Move Editor Group Down        |
-| :white_check_mark: | `<leader>` vk  | View Move Editor Group Up          |
-| :white_check_mark: | `<leader>` vh  | View Move Editor Group Left        |
-| :white_check_mark: | `<leader>` vl  | View Move Editor Group Right       |
-| :white_check_mark: | `<leader>` tn  | View Open Next Editor              |
-| :white_check_mark: | `<leader>` tN  | View Open Previous Editor          |
-| :white_check_mark: | `<leader>` tt  | File New Untitled File             |
-| :white_check_mark: | `<leader>` to  | View Close Other Editors In Group  |
-| :white_check_mark: | `<leader>` ta  | View Close Editors In Other Groups |
+| Status             | Command        | Description                          |
+| ------------------ | -------------- | ------------------------------------ |
+| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer              |
+| :white_check_mark: | `<leader>` a   | Source Action                        |
+| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility           |
+| :white_check_mark: | `<leader>` d   | Duplicate Selection                  |
+| :white_check_mark: | `<leader>` f   | Format Document                      |
+| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor               |
+| :white_check_mark: | `<leader>` u   | Transform To Title Case              |
+| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes            |
+| :white_check_mark: | `<leader>` o   | Go To File In Editor                 |
+| :white_check_mark: | `<leader>` p   | Show All Commands                    |
+| :white_check_mark: | `<leader>` mn  | Go To Next Problem                   |
+| :white_check_mark: | `<leader>` mN  | Go To Previous Problem               |
+| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task                |
+| :white_check_mark: | `<leader>` tc  | Tasks Configure Task                 |
+| :white_check_mark: | `<leader>` vii | Increase Current View Size           |
+| :white_check_mark: | `<leader>` vdd | Decrease Current View Size           |
+| :white_check_mark: | `<leader>` vih | Increase Editor Height               |
+| :white_check_mark: | `<leader>` vdh | Decrease Editor Height               |
+| :white_check_mark: | `<leader>` viw | Increase Editor Width                |
+| :white_check_mark: | `<leader>` vdw | Decrease Editor Width                |
+| :white_check_mark: | `<leader>` tt  | File New Untitled File               |
+| :white_check_mark: | `<leader>` tn  | View Open Next Editor                |
+| :white_check_mark: | `<leader>` tN  | View Open Previous Editor            |
+| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
+| :white_check_mark: | `<leader>` vgh | View Move Editor Group Left          |
+| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
+| :white_check_mark: | `<leader>` vgk | View Move Editor Group Up            |
+| :white_check_mark: | `<leader>` vif | View Move Editor Into First Group    |
+| :white_check_mark: | `<leader>` vil | View Move Editor Into Last Group     |
+| :white_check_mark: | `<leader>` vin | View Move Editor Into Next Group     |
+| :white_check_mark: | `<leader>` vip | View Move Editor Into Previous Group |
+| :white_check_mark: | `<leader>` veh | View Move Editor Left                |
+| :white_check_mark: | `<leader>` vel | View Move Editor Right               |
+| :white_check_mark: | `<leader>` ceg | View Close Editor Group              |
+| :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
+| :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
 
 <br>
 <details>
@@ -641,6 +648,22 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.action.showCommands"]
 		},
 		{
+			"before": ["<Leader>", "m", "n"],
+			"commands": ["editor.action.marker.next"]
+		},
+		{
+			"before": ["<Leader>", "m", "N"],
+			"commands": ["editor.action.marker.prev"]
+		},
+		{
+			"before": ["<Leader>", "t", "r"],
+			"commands": ["workbench.action.tasks.reRunTask"]
+		},
+		{
+			"before": ["<Leader>", "t", "c"],
+			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		},
+		{
 			"before": ["<Leader>", "v", "i", "i"],
 			"commands": ["workbench.action.increaseViewSize"]
 		},
@@ -665,38 +688,6 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.action.decreaseViewWidth"]
 		},
 		{
-			"before": ["<Leader>", "m", "n"],
-			"commands": ["editor.action.marker.next"]
-		},
-		{
-			"before": ["<Leader>", "m", "N"],
-			"commands": ["editor.action.marker.prev"]
-		},
-		{
-			"before": ["<Leader>", "t", "r"],
-			"commands": ["workbench.action.tasks.reRunTask"]
-		},
-		{
-			"before": ["<Leader>", "t", "c"],
-			"commands": ["workbench.action.tasks.configureTaskRunner"]
-		},
-		{
-			"before": ["<Leader>", "v", "j"],
-			"commands": ["workbench.action.moveActiveEditorGroupDown"]
-		},
-		{
-			"before": ["<Leader>", "v", "k"],
-			"commands": ["workbench.action.moveActiveEditorGroupUp"]
-		},
-		{
-			"before": ["<Leader>", "v", "h"],
-			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
-		},
-		{
-			"before": ["<Leader>", "v", "l"],
-			"commands": ["workbench.action.moveActiveEditorGroupRight"]
-		},
-		{
 			"before": ["<Leader>", "t", "t"],
 			"commands": ["workbench.action.files.newUntitledFile"]
 		},
@@ -709,11 +700,55 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.action.previousEditor"]
 		},
 		{
-			"before": ["<Leader>", "t", "o"],
+			"before": ["<Leader>", "v", "g", "j"],
+			"commands": ["workbench.action.moveActiveEditorGroupDown"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "h"],
+			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "l"],
+			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "k"],
+			"commands": ["workbench.action.moveActiveEditorGroupUp"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "f"],
+			"commands": ["workbench.action.moveEditorToFirstGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "l"],
+			"commands": ["workbench.action.moveEditorToLastGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "n"],
+			"commands": ["workbench.action.moveEditorToNextGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "p"],
+			"commands": ["workbench.action.moveEditorToPreviousGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "e", "h"],
+			"commands": ["workbench.action.moveEditorLeftInGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "e", "l"],
+			"commands": ["workbench.action.moveEditorRightInGroup"]
+		},
+		{
+			"before": ["<Leader>", "c", "e", "g"],
+			"commands": ["workbench.action.closeEditorsAndGroup"]
+		},
+		{
+			"before": ["<Leader>", "c", "o", "e"],
 			"commands": ["workbench.action.closeOtherEditors"]
 		},
 		{
-			"before": ["<Leader>", "t", "a"],
+			"before": ["<Leader>", "c", "e", "o"],
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		}
 	]
@@ -881,8 +916,8 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | ------------------ | ------------ | --------------------------- |
 | :white_check_mark: | `<leader>` l | Last Character In The Line  |
 | :white_check_mark: | `<leader>` h | First Character In The Line |
-| :white_check_mark: | `<leader>` J | Move 5 Line Down            |
-| :white_check_mark: | `<leader>` K | Move 5 Line Up              |
+| :white_check_mark: | J            | Move 5 Line Down            |
+| :white_check_mark: | K            | Move 5 Line Up              |
 
 <br>
 <details>
