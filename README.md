@@ -566,6 +566,9 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility           |
 | :white_check_mark: | `<leader>` d   | Duplicate Selection                  |
 | :white_check_mark: | `<leader>` f   | Format Document                      |
+| :white_check_mark: | `<leader>` q   | View Close Editor                    |
+| :white_check_mark: | `<leader>` w   | File Save                            |
+| :white_check_mark: | `<leader>` r   | Rename Symbol                        |
 | :white_check_mark: | `<leader>` t   | Go To Symbol In Editor               |
 | :white_check_mark: | `<leader>` u   | Transform To Title Case              |
 | :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes            |
@@ -626,6 +629,18 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "f"],
 			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["<Leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<Leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<Leader>", "r"],
+			"commands": ["editor.action.rename"]
 		},
 		{
 			"before": ["<Leader>", "t"],
@@ -839,8 +854,6 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | ------------------ | ------------ | ----------------------------- |
 | :white_check_mark: | `<leader>` l | Last Character In The Line    |
 | :white_check_mark: | `<leader>` h | First Character In The Line   |
-| :white_check_mark: | `<leader>` w | File Save                     |
-| :white_check_mark: | `<leader>` q | Close Editor                  |
 | :white_check_mark: | K            | Move 5 Line Up                |
 | :white_check_mark: | J            | Move 5 Line Down              |
 | :white_check_mark: | CTRL n       | Turn Off Search Highlighting  |
@@ -893,14 +906,6 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<C-l>"],
 			"after": ["<C-w>", "l"]
-		},
-		{
-			"before": ["leader", "q"],
-			"commands": [":q"]
-		},
-		{
-			"before": ["leader", "w"],
-			"commands": [":w"]
 		}
 	]
 }

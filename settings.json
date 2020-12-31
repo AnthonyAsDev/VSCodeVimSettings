@@ -145,14 +145,6 @@
 			"before": ["<C-l>"],
 			"after": ["<C-w>", "l"]
 		},
-		{
-			"before": ["leader", "q"],
-			"commands": [":q"]
-		},
-		{
-			"before": ["leader", "w"],
-			"commands": [":w"]
-		},
 		// VSCode Shortcuts
 		{
 			"before": ["<Leader>", "e", "e"],
@@ -173,6 +165,18 @@
 		{
 			"before": ["<Leader>", "f"],
 			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["<Leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<Leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<Leader>", "r"],
+			"commands": ["editor.action.rename"]
 		},
 		{
 			"before": ["<Leader>", "t"],
