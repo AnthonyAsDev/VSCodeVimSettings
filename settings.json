@@ -71,6 +71,10 @@
 			"before": ["<Leader>", "g", "r"],
 			"commands": ["git.revertSelectedRanges"]
 		},
+		{
+			"before": ["leader", "m", "c", "a"],
+			"commands": ["merge-conflict.accept.selection"]
+		},
 		// Emmet
 		{
 			"before": ["<Leader>", "e", "b", "i"],
@@ -356,7 +360,7 @@
 			"commands": ["git.unstageAll"]
 		},
 		{
-			"before": ["leader", "g", "c", "c"],
+			"before": ["leader", "g", "c", "m"],
 			"commands": ["git.commit"]
 		},
 		{
@@ -540,8 +544,52 @@
 			"commands": ["workbench.action.editor.previousChange"]
 		},
 		{
+			"before": ["leader", "g", "c", "n"],
+			"commands": ["workbench.action.compareEditor.nextChange"]
+		},
+		{
+			"before": ["leader", "g", "c", "N"],
+			"commands": ["workbench.action.compareEditor.previousChange"]
+		},
+		{
 			"before": ["leader", "g", "i", "v"],
 			"commands": ["toggle.diff.renderSideBySide"]
+		},
+		{
+			"before": ["leader", "m", "c", "b"],
+			"commands": ["merge-conflict.accept.both"]
+		},
+		{
+			"before": ["leader", "m", "c", "c"],
+			"commands": ["merge-conflict.accept.current"]
+		},
+		{
+			"before": ["leader", "m", "c", "i"],
+			"commands": ["merge-conflict.accept.incoming"]
+		},
+		{
+			"before": ["leader", "m", "c", "a", "b"],
+			"commands": ["merge-conflict.accept.all-both"]
+		},
+		{
+			"before": ["leader", "m", "c", "a", "c"],
+			"commands": ["merge-conflict.accept.all-current"]
+		},
+		{
+			"before": ["leader", "m", "c", "a", "i"],
+			"commands": ["merge-conflict.accept.all-incoming"]
+		},
+		{
+			"before": ["leader", "m", "c", "o"],
+			"commands": ["merge-conflict.compare"]
+		},
+		{
+			"before": ["leader", "m", "c", "n"],
+			"commands": ["merge-conflict.next"]
+		},
+		{
+			"before": ["leader", "m", "c", "N"],
+			"commands": ["merge-conflict.previous"]
 		},
 		// Emmet
 		{
