@@ -324,6 +324,10 @@
 			"commands": ["git.ignore"]
 		},
 		{
+			"before": ["leader", "g", "p", "g"],
+			"commands": ["github.publish"]
+		},
+		{
 			"before": ["leader", "g", "a", "r"],
 			"commands": ["git.addRemote"]
 		},

@@ -14,6 +14,7 @@ Git is a distributed version-control system for tracking changes in any set of f
 | :white_check_mark: | `<leader>` gtl   | Focus On Timeline View                  |
 | :white_check_mark: | `<leader>` gir   | Git Initialize Repository               |
 | :white_check_mark: | `<leader>` gai   | Git Add To .gitignore                   |
+| :white_check_mark: | `<leader>` gpg   | Publish To Github
 | :white_check_mark: | `<leader>` gar   | Git Add Remote                          |
 | :white_check_mark: | `<leader>` grr   | Git Remove Remote                       |
 | :white_check_mark: | `<leader>` gsc   | Git Stage Change                        |
@@ -106,6 +107,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["leader", "g", "a", "i"],
 			"commands": ["git.ignore"]
+		},
+		{
+			"before": ["leader", "g", "p", "g"],
+			"commands": ["github.publish"]
 		},
 		{
 			"before": ["leader", "g", "a", "r"],
