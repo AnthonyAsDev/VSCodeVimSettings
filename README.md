@@ -14,7 +14,7 @@ Git is a distributed version-control system for tracking changes in any set of f
 | :white_check_mark: | `<leader>` gtl   | Focus On Timeline View                  |
 | :white_check_mark: | `<leader>` gir   | Git Initialize Repository               |
 | :white_check_mark: | `<leader>` gai   | Git Add To .gitignore                   |
-| :white_check_mark: | `<leader>` gpg   | Publish To Github
+| :white_check_mark: | `<leader>` gpg   | Publish To Github                       |
 | :white_check_mark: | `<leader>` gar   | Git Add Remote                          |
 | :white_check_mark: | `<leader>` grr   | Git Remove Remote                       |
 | :white_check_mark: | `<leader>` gsc   | Git Stage Change                        |
@@ -338,7 +338,9 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		},
 		{
 			"before": ["leader", "g", "c", "N"],
-			"commands": ["workbench.action.compareEditor.previousChange"]
+			"commands": [
+				"workbench.action.compareEditor.previousChange"
+			]
 		},
 		{
 			"before": ["leader", "g", "i", "v"],
@@ -476,11 +478,15 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		},
 		{
 			"before": ["<Leader>", "e", "i", "0"],
-			"commands": ["editor.emmet.action.incrementNumberByOneTenth"]
+			"commands": [
+				"editor.emmet.action.incrementNumberByOneTenth"
+			]
 		},
 		{
 			"before": ["<Leader>", "e", "d", "0"],
-			"commands": ["editor.emmet.action.decrementNumberByOneTenth"]
+			"commands": [
+				"editor.emmet.action.decrementNumberByOneTenth"
+			]
 		},
 		{
 			"before": ["<Leader>", "e", "i", "u"],
@@ -789,7 +795,9 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		},
 		{
 			"before": ["<Leader>", "v", "g", "l"],
-			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+			"commands": [
+				"workbench.action.moveActiveEditorGroupRight"
+			]
 		},
 		{
 			"before": ["<Leader>", "v", "g", "k"],
@@ -1013,6 +1021,134 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["K"],
 			"after": ["5", "k"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+## VSCode Debug
+
+### Normal Mode
+
+| Status             | Command        | Description                      |
+| ------------------ | -------------- | -------------------------------- |
+| :white_check_mark: | `<leader>` df  | View Show Run And Debug          |
+| :white_check_mark: | `<leader>` dc  | Debug Continue                   |
+| :white_check_mark: | `<leader>` dp  | Debug Pause                      |
+| :white_check_mark: | `<leader>` dr  | Debug Restart                    |
+| :white_check_mark: | `<leader>` dh  | Debug Show Hover                 |
+| :white_check_mark: | `<leader>` ds  | Debug Start Debugging            |
+| :white_check_mark: | `<leader>` di  | Debug Step Into                  |
+| :white_check_mark: | `<leader>` du  | Debug Step Out                   |
+| :white_check_mark: | `<leader>` do  | Debug Step Over                  |
+| :white_check_mark: | `<leader>` dx  | Debug Stop                       |
+| :white_check_mark: | `<leader>` db  | Debug Toggle Breakpoint          |
+| :white_check_mark: | `<leader>` dal | Debug Add Logpoint               |
+| :white_check_mark: | `<leader>` daf | Debug Add Function Breakpoint    |
+| :white_check_mark: | `<leader>` dac | Debug Add Conditional Breakpoint |
+| :white_check_mark: | `<leader>` dai | Debug Inline Breakpoint          |
+| :white_check_mark: | `<leader>` deb | Debug Enable All Breakpoint      |
+| :white_check_mark: | `<leader>` ddb | Debug Disable All Breakpoint     |
+| :white_check_mark: | `<leader>` drb | Debug Remove All Breakpoint      |
+| :white_check_mark: | `<leader>` dn  | Debug Go To Next Breakpoint      |
+| :white_check_mark: | `<leader>` dN  | Debug Go To Previous Breakpoint  |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "d", "f"],
+			"commands": ["workbench.view.debug"]
+		},
+		{
+			"before": ["<Leader>", "d", "c"],
+			"commands": ["workbench.action.debug.continue"]
+		},
+		{
+			"before": ["<Leader>", "d", "p"],
+			"commands": ["workbench.action.debug.pause"]
+		},
+		{
+			"before": ["<Leader>", "d", "r"],
+			"commands": ["workbench.action.debug.restart"]
+		},
+		{
+			"before": ["<Leader>", "d", "h"],
+			"commands": ["editor.debug.action.showDebugHover"]
+		},
+		{
+			"before": ["<Leader>", "d", "s"],
+			"commands": ["workbench.action.debug.start"]
+		},
+		{
+			"before": ["<Leader>", "d", "i"],
+			"commands": ["workbench.action.debug.stepInto"]
+		},
+		{
+			"before": ["<Leader>", "d", "u"],
+			"commands": ["workbench.action.debug.stepOut"]
+		},
+		{
+			"before": ["<Leader>", "d", "o"],
+			"commands": ["workbench.action.debug.stepOver"]
+		},
+		{
+			"before": ["<Leader>", "d", "b"],
+			"commands": ["editor.debug.action.toggleBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "l"],
+			"commands": ["editor.debug.action.addLogPoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "f"],
+			"commands": [
+				"workbench.debug.viewlet.action.addFunctionBreakpointAction"
+			]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "c"],
+			"commands": ["editor.debug.action.conditionalBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "i"],
+			"commands": ["editor.debug.action.toggleInlineBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "e", "b"],
+			"commands": [
+				"workbench.debug.viewlet.action.enableAllBreakpoints"
+			]
+		},
+		{
+			"before": ["<Leader>", "d", "d", "b"],
+			"commands": [
+				"workbench.debug.viewlet.action.disableAllBreakpoints"
+			]
+		},
+		{
+			"before": ["<Leader>", "d", "r", "b"],
+			"commands": [
+				"workbench.debug.viewlet.action.removeAllBreakpoints"
+			]
+		},
+		{
+			"before": ["<Leader>", "d", "n"],
+			"commands": ["editor.debug.action.goToNextBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "N"],
+			"commands": ["editor.debug.action.goToPreviousBreakpoint"]
 		}
 	]
 }

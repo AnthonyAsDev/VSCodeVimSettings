@@ -667,6 +667,85 @@
 		{
 			"before": ["<Leader>", "e", "w"],
 			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
+		},
+		// VSCode Debug
+		{
+			"before": ["<Leader>", "d", "f"],
+			"commands": ["workbench.view.debug"]
+		},
+		{
+			"before": ["<Leader>", "d", "c"],
+			"commands": ["workbench.action.debug.continue"]
+		},
+		{
+			"before": ["<Leader>", "d", "p"],
+			"commands": ["workbench.action.debug.pause"]
+		},
+		{
+			"before": ["<Leader>", "d", "r"],
+			"commands": ["workbench.action.debug.restart"]
+		},
+		{
+			"before": ["<Leader>", "d", "h"],
+			"commands": ["editor.debug.action.showDebugHover"]
+		},
+		{
+			"before": ["<Leader>", "d", "s"],
+			"commands": ["workbench.action.debug.start"]
+		},
+		{
+			"before": ["<Leader>", "d", "i"],
+			"commands": ["workbench.action.debug.stepInto"]
+		},
+		{
+			"before": ["<Leader>", "d", "u"],
+			"commands": ["workbench.action.debug.stepOut"]
+		},
+		{
+			"before": ["<Leader>", "d", "o"],
+			"commands": ["workbench.action.debug.stepOver"]
+		},
+		{
+			"before": ["<Leader>", "d", "b"],
+			"commands": ["editor.debug.action.toggleBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "l"],
+			"commands": ["editor.debug.action.addLogPoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "f"],
+			"commands": [
+				"workbench.debug.viewlet.action.addFunctionBreakpointAction"
+			]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "c"],
+			"commands": ["editor.debug.action.conditionalBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "a", "i"],
+			"commands": ["editor.debug.action.toggleInlineBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "e", "b"],
+			"commands": ["workbench.debug.viewlet.action.enableAllBreakpoints"]
+		},
+		{
+			"before": ["<Leader>", "d", "d", "b"],
+			"commands": ["workbench.debug.viewlet.action.disableAllBreakpoints"]
+		},
+		{
+			"before": ["<Leader>", "d", "r", "b"],
+			"commands": ["workbench.debug.viewlet.action.removeAllBreakpoints"]
+		},
+		{
+			"before": ["<Leader>", "d", "n"],
+			"commands": ["editor.debug.action.goToNextBreakpoint"]
+		},
+		{
+			"before": ["<Leader>", "d", "N"],
+			"commands": ["editor.debug.action.goToPreviousBreakpoint"]
 		}
 	]
 }
