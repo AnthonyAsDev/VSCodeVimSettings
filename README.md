@@ -119,47 +119,25 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 
 ### Normal Mode
 
-| Status             | Command        | Description                          |
-| ------------------ | -------------- | ------------------------------------ |
-| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer              |
-| :white_check_mark: | `<leader>` a   | Source Action                        |
-| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility           |
-| :white_check_mark: | `<leader>` d   | Duplicate Selection                  |
-| :white_check_mark: | `<leader>` f   | Format Document                      |
-| :white_check_mark: | `<leader>` q   | View Close Editor                    |
-| :white_check_mark: | `<leader>` w   | File Save                            |
-| :white_check_mark: | `<leader>` r   | Rename Symbol                        |
-| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor               |
-| :white_check_mark: | `<leader>` u   | Transform To Title Case              |
-| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes            |
-| :white_check_mark: | `<leader>` o   | Go To File In Editor                 |
-| :white_check_mark: | `<leader>` p   | Show All Commands                    |
-| :white_check_mark: | `<leader>` mn  | Go To Next Problem                   |
-| :white_check_mark: | `<leader>` mN  | Go To Previous Problem               |
-| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task                |
-| :white_check_mark: | `<leader>` tc  | Tasks Configure Task                 |
-| :white_check_mark: | `<leader>` vii | Increase Current View Size           |
-| :white_check_mark: | `<leader>` vdd | Decrease Current View Size           |
-| :white_check_mark: | `<leader>` vih | Increase Editor Height               |
-| :white_check_mark: | `<leader>` vdh | Decrease Editor Height               |
-| :white_check_mark: | `<leader>` viw | Increase Editor Width                |
-| :white_check_mark: | `<leader>` vdw | Decrease Editor Width                |
-| :white_check_mark: | `<leader>` tt  | File New Untitled File               |
-| :white_check_mark: | `<leader>` tn  | View Open Next Editor                |
-| :white_check_mark: | `<leader>` tN  | View Open Previous Editor            |
-| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
-| :white_check_mark: | `<leader>` vgh | View Move Editor Group Left          |
-| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
-| :white_check_mark: | `<leader>` vgk | View Move Editor Group Up            |
-| :white_check_mark: | `<leader>` vif | View Move Editor Into First Group    |
-| :white_check_mark: | `<leader>` vil | View Move Editor Into Last Group     |
-| :white_check_mark: | `<leader>` vin | View Move Editor Into Next Group     |
-| :white_check_mark: | `<leader>` vip | View Move Editor Into Previous Group |
-| :white_check_mark: | `<leader>` veh | View Move Editor Left                |
-| :white_check_mark: | `<leader>` vel | View Move Editor Right               |
-| :white_check_mark: | `<leader>` ceg | View Close Editor Group              |
-| :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
-| :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
+| Status             | Command       | Description                |
+| ------------------ | ------------- | -------------------------- |
+| :white_check_mark: | `<leader>` ee | Focus On Files Explorer    |
+| :white_check_mark: | `<leader>` a  | Source Action              |
+| :white_check_mark: | `<leader>` s  | Toggle Side Bar Visibility |
+| :white_check_mark: | `<leader>` d  | Duplicate Selection        |
+| :white_check_mark: | `<leader>` f  | Format Document            |
+| :white_check_mark: | `<leader>` q  | View Close Editor          |
+| :white_check_mark: | `<leader>` w  | File Save                  |
+| :white_check_mark: | `<leader>` r  | Rename Symbol              |
+| :white_check_mark: | `<leader>` t  | Go To Symbol In Editor     |
+| :white_check_mark: | `<leader>` u  | Transform To Title Case    |
+| :white_check_mark: | `<leader>` i  | Toggle Editor Group Sizes  |
+| :white_check_mark: | `<leader>` o  | Go To File In Editor       |
+| :white_check_mark: | `<leader>` p  | Show All Commands          |
+| :white_check_mark: | `<leader>` mn | Go To Next Problem         |
+| :white_check_mark: | `<leader>` mN | Go To Previous Problem     |
+| :white_check_mark: | `<leader>` tr | Tasks Rerun Last Task      |
+| :white_check_mark: | `<leader>` tc | Tasks Configure Task       |
 
 <br>
 <details>
@@ -179,15 +157,15 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.action.quickFix"]
 		},
 		{
-			"before": ["<Leader>", "s"],
+			"before": ["<Leader>", "s", "b"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		{
-			"before": ["<Leader>", "d"],
+			"before": ["<Leader>", "d", "s"],
 			"commands": ["editor.action.duplicateSelection"]
 		},
 		{
-			"before": ["<Leader>", "f"],
+			"before": ["<Leader>", "f", "d"],
 			"commands": ["editor.action.formatDocument"]
 		},
 		{
@@ -237,7 +215,125 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "t", "c"],
 			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### Visual Mode
+
+| Status             | Command      | Description                |
+| ------------------ | ------------ | -------------------------- |
+| :white_check_mark: | `<leader>` a | Source Action              |
+| :white_check_mark: | `<leader>` s | Toggle Side Bar Visibility |
+| :white_check_mark: | `<leader>` d | Duplicate Selection        |
+| :white_check_mark: | `<leader>` f | Format Selection           |
+| :white_check_mark: | `<leader>` u | Transform To Title Case    |
+| :white_check_mark: | `<leader>` i | Toggle Editor Group Sizes  |
+| :white_check_mark: | `<leader>` o | Go To File In Editor       |
+| :white_check_mark: | `<leader>` p | Show All Commands          |
+| :white_check_mark: | CTRL j       | Move Line Up               |
+| :white_check_mark: | CTRL k       | Move Line Down             |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "a"],
+			"commands": ["editor.action.quickFix"]
 		},
+		{
+			"before": ["<Leader>", "s"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<Leader>", "d"],
+			"commands": ["editor.action.duplicateSelection"]
+		},
+		{
+			"before": ["<Leader>", "f"],
+			"commands": ["editor.action.formatSelection"]
+		},
+		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
+		},
+		{
+			"before": ["<Leader>", "i"],
+			"commands": ["workbench.action.toggleEditorWidths"]
+		},
+		{
+			"before": ["<Leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<Leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<C-j>"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["<C-k>"],
+			"commands": ["editor.action.moveLinesUpAction"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+## View Commands
+
+### Normal Mode
+
+| Status             | Command        | Description                          |
+| ------------------ | -------------- | ------------------------------------ |
+| :white_check_mark: | `<leader>` vii | Increase Current View Size           |
+| :white_check_mark: | `<leader>` vdd | Decrease Current View Size           |
+| :white_check_mark: | `<leader>` vih | Increase Editor Height               |
+| :white_check_mark: | `<leader>` vdh | Decrease Editor Height               |
+| :white_check_mark: | `<leader>` viw | Increase Editor Width                |
+| :white_check_mark: | `<leader>` vdw | Decrease Editor Width                |
+| :white_check_mark: | `<leader>` tt  | File New Untitled File               |
+| :white_check_mark: | `<leader>` tn  | View Open Next Editor                |
+| :white_check_mark: | `<leader>` tN  | View Open Previous Editor            |
+| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
+| :white_check_mark: | `<leader>` vgh | View Move Editor Group Left          |
+| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
+| :white_check_mark: | `<leader>` vgk | View Move Editor Group Up            |
+| :white_check_mark: | `<leader>` vif | View Move Editor Into First Group    |
+| :white_check_mark: | `<leader>` vil | View Move Editor Into Last Group     |
+| :white_check_mark: | `<leader>` vin | View Move Editor Into Next Group     |
+| :white_check_mark: | `<leader>` vip | View Move Editor Into Previous Group |
+| :white_check_mark: | `<leader>` veh | View Move Editor Left                |
+| :white_check_mark: | `<leader>` vel | View Move Editor Right               |
+| :white_check_mark: | `<leader>` ceg | View Close Editor Group              |
+| :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
+| :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
 		{
 			"before": ["<Leader>", "v", "i", "i"],
 			"commands": ["workbench.action.increaseViewSize"]
@@ -336,18 +432,9 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ### Visual Mode
 
-| Status             | Command      | Description                |
-| ------------------ | ------------ | -------------------------- |
-| :white_check_mark: | `<leader>` a | Source Action              |
-| :white_check_mark: | `<leader>` s | Toggle Side Bar Visibility |
-| :white_check_mark: | `<leader>` d | Duplicate Selection        |
-| :white_check_mark: | `<leader>` f | Format Selection           |
-| :white_check_mark: | `<leader>` u | Transform To Title Case    |
-| :white_check_mark: | `<leader>` i | Toggle Editor Group Sizes  |
-| :white_check_mark: | `<leader>` o | Go To File In Editor       |
-| :white_check_mark: | `<leader>` p | Show All Commands          |
-| :white_check_mark: | CTRL j       | Move Line Up               |
-| :white_check_mark: | CTRL k       | Move Line Down             |
+| Status             | Command        | Description            |
+| ------------------ | -------------- | ---------------------- |
+| :white_check_mark: | `<leader>` ebi | Emmet Balance (inward) |
 
 <br>
 <details>
@@ -359,44 +446,8 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 {
 	"vim.visualModeKeyBindingsNonRecursive": [
 		{
-			"before": ["<Leader>", "a"],
-			"commands": ["editor.action.quickFix"]
-		},
-		{
-			"before": ["<Leader>", "s"],
-			"commands": ["workbench.action.toggleSidebarVisibility"]
-		},
-		{
-			"before": ["<Leader>", "d"],
-			"commands": ["editor.action.duplicateSelection"]
-		},
-		{
-			"before": ["<Leader>", "f"],
-			"commands": ["editor.action.formatSelection"]
-		},
-		{
-			"before": ["<Leader>", "u"],
-			"commands": ["editor.action.transformToTitlecase"]
-		},
-		{
-			"before": ["<Leader>", "i"],
-			"commands": ["workbench.action.toggleEditorWidths"]
-		},
-		{
-			"before": ["<Leader>", "o"],
-			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<Leader>", "p"],
-			"commands": ["workbench.action.showCommands"]
-		},
-		{
-			"before": ["<C-j>"],
-			"commands": ["editor.action.moveLinesDownAction"]
-		},
-		{
-			"before": ["<C-k>"],
-			"commands": ["editor.action.moveLinesUpAction"]
+			"before": ["<Leader>", "e", "b", "i"],
+			"commands": ["editor.emmet.action.balanceIn"]
 		}
 	]
 }
@@ -1022,7 +1073,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-## VSCode Debug
+## Debug Commands
 
 ### Normal Mode
 

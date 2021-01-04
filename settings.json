@@ -218,6 +218,7 @@
 			"before": ["<Leader>", "t", "c"],
 			"commands": ["workbench.action.tasks.configureTaskRunner"]
 		},
+		// View Commands
 		{
 			"before": ["<Leader>", "v", "i", "i"],
 			"commands": ["workbench.action.increaseViewSize"]
@@ -306,7 +307,7 @@
 			"before": ["<Leader>", "c", "e", "o"],
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
 		},
-		// Emmet
+		// Emmet Commands
 		{
 			"before": ["<Leader>", "e", "i", "0"],
 			"commands": ["editor.emmet.action.incrementNumberByOneTenth"]
@@ -379,7 +380,7 @@
 			"before": ["<Leader>", "e", "w"],
 			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
 		},
-		// Git
+		// Git Commands
 		{
 			"before": ["leader", "g", "g"],
 			"commands": ["workbench.scm.focus"]
@@ -668,7 +669,7 @@
 			"before": ["leader", "m", "c", "N"],
 			"commands": ["merge-conflict.previous"]
 		},
-		// VSCode Debug
+		// Debug Commands
 		{
 			"before": ["<Leader>", "d", "f"],
 			"commands": ["workbench.view.debug"]
