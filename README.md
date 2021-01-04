@@ -132,11 +132,11 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 
 | Status             | Command       | Description                |
 | ------------------ | ------------- | -------------------------- |
-| :white_check_mark: | `<leader>` ee | Focus On Files Explorer    |
+| :white_check_mark: | `<leader>` ef | Focus On Files Explorer    |
 | :white_check_mark: | `<leader>` a  | Source Action              |
-| :white_check_mark: | `<leader>` s  | Toggle Side Bar Visibility |
-| :white_check_mark: | `<leader>` d  | Duplicate Selection        |
-| :white_check_mark: | `<leader>` f  | Format Document            |
+| :white_check_mark: | `<leader>` sb | Toggle Side Bar Visibility |
+| :white_check_mark: | `<leader>` ds | Duplicate Selection        |
+| :white_check_mark: | `<leader>` fd | Format Document            |
 | :white_check_mark: | `<leader>` q  | View Close Editor          |
 | :white_check_mark: | `<leader>` w  | File Save                  |
 | :white_check_mark: | `<leader>` r  | Rename Symbol              |
@@ -160,7 +160,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 {
 	"vim.normalModeKeyBindingsNonRecursive": [
 		{
-			"before": ["<Leader>", "e", "e"],
+			"before": ["<Leader>", "e", "f"],
 			"commands": ["workbench.explorer.fileView.focus"]
 		},
 		{
@@ -322,10 +322,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` tt  | File New Untitled File               |
 | :white_check_mark: | `<leader>` tn  | View Open Next Editor                |
 | :white_check_mark: | `<leader>` tN  | View Open Previous Editor            |
-| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
 | :white_check_mark: | `<leader>` vgh | View Move Editor Group Left          |
-| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
+| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
 | :white_check_mark: | `<leader>` vgk | View Move Editor Group Up            |
+| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
 | :white_check_mark: | `<leader>` vif | View Move Editor Into First Group    |
 | :white_check_mark: | `<leader>` vil | View Move Editor Into Last Group     |
 | :white_check_mark: | `<leader>` vin | View Move Editor Into Next Group     |
@@ -335,6 +335,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` ceg | View Close Editor Group              |
 | :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
 | :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
+| :white_check_mark: | `<leader>` sh  | View Split Editor Left               |
+| :white_check_mark: | `<leader>` sd  | View Split Editor Down               |
+| :white_check_mark: | `<leader>` su  | View Split Editor Up                 |
+| :white_check_mark: | `<leader>` sl  | View Split Editor Right              |
 
 <br>
 <details>
@@ -432,6 +436,22 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "c", "e", "o"],
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
+		},
+		{
+			"before": ["<Leader>", "s", "h"],
+			"commands": ["workbench.action.splitEditorLeft"]
+		},
+		{
+			"before": ["<Leader>", "s", "d"],
+			"commands": ["workbench.action.splitEditorDown"]
+		},
+		{
+			"before": ["<Leader>", "s", "u"],
+			"commands": ["workbench.action.splitEditorUp"]
+		},
+		{
+			"before": ["<Leader>", "s", "r"],
+			"commands": ["workbench.action.splitEditorRight"]
 		}
 	]
 }

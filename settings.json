@@ -151,7 +151,7 @@
 		},
 		// VSCode Shortcuts
 		{
-			"before": ["<Leader>", "e", "e"],
+			"before": ["<Leader>", "e", "f"],
 			"commands": ["workbench.explorer.fileView.focus"]
 		},
 		{
@@ -159,15 +159,15 @@
 			"commands": ["editor.action.quickFix"]
 		},
 		{
-			"before": ["<Leader>", "s"],
+			"before": ["<Leader>", "s", "b"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		{
-			"before": ["<Leader>", "d"],
+			"before": ["<Leader>", "d", "s"],
 			"commands": ["editor.action.duplicateSelection"]
 		},
 		{
-			"before": ["<Leader>", "f"],
+			"before": ["<Leader>", "f", "d"],
 			"commands": ["editor.action.formatDocument"]
 		},
 		{
@@ -306,6 +306,22 @@
 		{
 			"before": ["<Leader>", "c", "e", "o"],
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
+		},
+		{
+			"before": ["<Leader>", "s", "h"],
+			"commands": ["workbench.action.splitEditorLeft"]
+		},
+		{
+			"before": ["<Leader>", "s", "d"],
+			"commands": ["workbench.action.splitEditorDown"]
+		},
+		{
+			"before": ["<Leader>", "s", "u"],
+			"commands": ["workbench.action.splitEditorUp"]
+		},
+		{
+			"before": ["<Leader>", "s", "r"],
+			"commands": ["workbench.action.splitEditorRight"]
 		},
 		// Emmet Commands
 		{
