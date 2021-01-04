@@ -58,23 +58,6 @@
 			"before": ["<C-k>"],
 			"commands": ["editor.action.moveLinesUpAction"]
 		},
-		// Git
-		{
-			"before": ["<Leader>", "g", "s"],
-			"commands": ["git.stageSelectedRanges"]
-		},
-		{
-			"before": ["<Leader>", "g", "u"],
-			"commands": ["git.unstageSelectedRanges"]
-		},
-		{
-			"before": ["<Leader>", "g", "r"],
-			"commands": ["git.revertSelectedRanges"]
-		},
-		{
-			"before": ["leader", "m", "c", "a"],
-			"commands": ["merge-conflict.accept.selection"]
-		},
 		// Emmet
 		{
 			"before": ["<Leader>", "e", "b", "i"],
@@ -109,6 +92,23 @@
 			"commands": [
 				"editor.emmet.action.wrapIndividualLinesWithAbbreviation"
 			]
+		},
+		// Git
+		{
+			"before": ["<Leader>", "g", "s"],
+			"commands": ["git.stageSelectedRanges"]
+		},
+		{
+			"before": ["<Leader>", "g", "u"],
+			"commands": ["git.unstageSelectedRanges"]
+		},
+		{
+			"before": ["<Leader>", "g", "r"],
+			"commands": ["git.revertSelectedRanges"]
+		},
+		{
+			"before": ["leader", "m", "c", "a"],
+			"commands": ["merge-conflict.accept.selection"]
 		}
 	],
 	"vim.normalModeKeyBindingsNonRecursive": [
@@ -305,6 +305,79 @@
 		{
 			"before": ["<Leader>", "c", "e", "o"],
 			"commands": ["workbench.action.closeEditorsInOtherGroups"]
+		},
+		// Emmet
+		{
+			"before": ["<Leader>", "e", "i", "0"],
+			"commands": ["editor.emmet.action.incrementNumberByOneTenth"]
+		},
+		{
+			"before": ["<Leader>", "e", "d", "0"],
+			"commands": ["editor.emmet.action.decrementNumberByOneTenth"]
+		},
+		{
+			"before": ["<Leader>", "e", "i", "u"],
+			"commands": ["editor.emmet.action.incrementNumberByOne"]
+		},
+		{
+			"before": ["<Leader>", "e", "d", "u"],
+			"commands": ["editor.emmet.action.decrementNumberByOne"]
+		},
+		{
+			"before": ["<Leader>", "e", "i", "d"],
+			"commands": ["editor.emmet.action.incrementNumberByTen"]
+		},
+		{
+			"before": ["<Leader>", "e", "d", "d"],
+			"commands": ["editor.emmet.action.decrementNumberByTen"]
+		},
+		{
+			"before": ["<Leader>", "e", "t"],
+			"commands": ["editor.emmet.action.matchTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "n"],
+			"commands": ["editor.emmet.action.nextEditPoint"]
+		},
+		{
+			"before": ["<Leader>", "e", "N"],
+			"commands": ["editor.emmet.action.prevEditPoint"]
+		},
+		{
+			"before": ["<Leader>", "e", "x"],
+			"commands": ["editor.emmet.action.evaluateMathExpression"]
+		},
+		{
+			"before": ["<Leader>", "e", "m", "l"],
+			"commands": ["editor.emmet.action.mergeLines"]
+		},
+		{
+			"before": ["<Leader>", "e", "u", "t"],
+			"commands": ["editor.emmet.action.updateTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "r", "t"],
+			"commands": ["editor.emmet.action.removeTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "s", "j"],
+			"commands": ["editor.emmet.action.splitJoinTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "u", "i"],
+			"commands": ["editor.emmet.action.updateImageSize"]
+		},
+		{
+			"before": ["<Leader>", "e", "c"],
+			"commands": ["editor.emmet.action.toggleComment"]
+		},
+		{
+			"before": ["<Leader>", "e", "r", "c"],
+			"commands": ["editor.emmet.action.reflectCSSValue"]
+		},
+		{
+			"before": ["<Leader>", "e", "w"],
+			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
 		},
 		// Git
 		{
@@ -594,79 +667,6 @@
 		{
 			"before": ["leader", "m", "c", "N"],
 			"commands": ["merge-conflict.previous"]
-		},
-		// Emmet
-		{
-			"before": ["<Leader>", "e", "i", "0"],
-			"commands": ["editor.emmet.action.incrementNumberByOneTenth"]
-		},
-		{
-			"before": ["<Leader>", "e", "d", "0"],
-			"commands": ["editor.emmet.action.decrementNumberByOneTenth"]
-		},
-		{
-			"before": ["<Leader>", "e", "i", "u"],
-			"commands": ["editor.emmet.action.incrementNumberByOne"]
-		},
-		{
-			"before": ["<Leader>", "e", "d", "u"],
-			"commands": ["editor.emmet.action.decrementNumberByOne"]
-		},
-		{
-			"before": ["<Leader>", "e", "i", "d"],
-			"commands": ["editor.emmet.action.incrementNumberByTen"]
-		},
-		{
-			"before": ["<Leader>", "e", "d", "d"],
-			"commands": ["editor.emmet.action.decrementNumberByTen"]
-		},
-		{
-			"before": ["<Leader>", "e", "t"],
-			"commands": ["editor.emmet.action.matchTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "n"],
-			"commands": ["editor.emmet.action.nextEditPoint"]
-		},
-		{
-			"before": ["<Leader>", "e", "N"],
-			"commands": ["editor.emmet.action.prevEditPoint"]
-		},
-		{
-			"before": ["<Leader>", "e", "x"],
-			"commands": ["editor.emmet.action.evaluateMathExpression"]
-		},
-		{
-			"before": ["<Leader>", "e", "m", "l"],
-			"commands": ["editor.emmet.action.mergeLines"]
-		},
-		{
-			"before": ["<Leader>", "e", "u", "t"],
-			"commands": ["editor.emmet.action.updateTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "r", "t"],
-			"commands": ["editor.emmet.action.removeTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "s", "j"],
-			"commands": ["editor.emmet.action.splitJoinTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "u", "i"],
-			"commands": ["editor.emmet.action.updateImageSize"]
-		},
-		{
-			"before": ["<Leader>", "e", "c"],
-			"commands": ["editor.emmet.action.toggleComment"]
-		},
-		{
-			"before": ["<Leader>", "e", "r", "c"],
-			"commands": ["editor.emmet.action.reflectCSSValue"]
-		},
-		{
-			"before": ["<Leader>", "e", "w"],
-			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
 		},
 		// VSCode Debug
 		{

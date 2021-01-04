@@ -2,6 +2,598 @@
 
 VSCodeVim is a Vim emulator for Visual Studio Code + Commands
 
+## Vim Shortcuts
+
+### Normal Mode
+
+| Status             | Command      | Description                   |
+| ------------------ | ------------ | ----------------------------- |
+| :white_check_mark: | `<leader>` l | Last Character In The Line    |
+| :white_check_mark: | `<leader>` h | First Character In The Line   |
+| :white_check_mark: | K            | Move 5 Line Up                |
+| :white_check_mark: | J            | Move 5 Line Down              |
+| :white_check_mark: | CTRL n       | Turn Off Search Highlighting  |
+| :white_check_mark: | CTRL j       | View Focus Above Editor Group |
+| :white_check_mark: | CTRL k       | View Focus Below Editor Group |
+| :white_check_mark: | CTRL h       | View Focus Left Editor Group  |
+| :white_check_mark: | CTRL l       | View Focus Right Editor Group |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		},
+		{
+			"before": ["<Leader>", "l"],
+			"after": ["$"]
+		},
+		{
+			"before": ["<Leader>", "h"],
+			"after": ["^"]
+		},
+		{
+			"before": ["<C-n>"],
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["<C-h>"],
+			"after": ["<C-w>", "h"]
+		},
+		{
+			"before": ["<C-j>"],
+			"after": ["<C-w>", "j"]
+		},
+		{
+			"before": ["<C-k>"],
+			"after": ["<C-w>", "k"]
+		},
+		{
+			"before": ["<C-l>"],
+			"after": ["<C-w>", "l"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### Visual Mode
+
+| Status             | Command      | Description                 |
+| ------------------ | ------------ | --------------------------- |
+| :white_check_mark: | `<leader>` l | Last Character In The Line  |
+| :white_check_mark: | `<leader>` h | First Character In The Line |
+| :white_check_mark: | J            | Move 5 Line Down            |
+| :white_check_mark: | K            | Move 5 Line Up              |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "l"],
+			"after": ["$"]
+		},
+		{
+			"before": ["<Leader>", "h"],
+			"after": ["^"]
+		},
+		{
+			"before": ["J"],
+			"after": ["5", "j"]
+		},
+		{
+			"before": ["K"],
+			"after": ["5", "k"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+## VSCode Shortcuts
+
+Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+
+### Normal Mode
+
+| Status             | Command        | Description                          |
+| ------------------ | -------------- | ------------------------------------ |
+| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer              |
+| :white_check_mark: | `<leader>` a   | Source Action                        |
+| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility           |
+| :white_check_mark: | `<leader>` d   | Duplicate Selection                  |
+| :white_check_mark: | `<leader>` f   | Format Document                      |
+| :white_check_mark: | `<leader>` q   | View Close Editor                    |
+| :white_check_mark: | `<leader>` w   | File Save                            |
+| :white_check_mark: | `<leader>` r   | Rename Symbol                        |
+| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor               |
+| :white_check_mark: | `<leader>` u   | Transform To Title Case              |
+| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes            |
+| :white_check_mark: | `<leader>` o   | Go To File In Editor                 |
+| :white_check_mark: | `<leader>` p   | Show All Commands                    |
+| :white_check_mark: | `<leader>` mn  | Go To Next Problem                   |
+| :white_check_mark: | `<leader>` mN  | Go To Previous Problem               |
+| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task                |
+| :white_check_mark: | `<leader>` tc  | Tasks Configure Task                 |
+| :white_check_mark: | `<leader>` vii | Increase Current View Size           |
+| :white_check_mark: | `<leader>` vdd | Decrease Current View Size           |
+| :white_check_mark: | `<leader>` vih | Increase Editor Height               |
+| :white_check_mark: | `<leader>` vdh | Decrease Editor Height               |
+| :white_check_mark: | `<leader>` viw | Increase Editor Width                |
+| :white_check_mark: | `<leader>` vdw | Decrease Editor Width                |
+| :white_check_mark: | `<leader>` tt  | File New Untitled File               |
+| :white_check_mark: | `<leader>` tn  | View Open Next Editor                |
+| :white_check_mark: | `<leader>` tN  | View Open Previous Editor            |
+| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
+| :white_check_mark: | `<leader>` vgh | View Move Editor Group Left          |
+| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
+| :white_check_mark: | `<leader>` vgk | View Move Editor Group Up            |
+| :white_check_mark: | `<leader>` vif | View Move Editor Into First Group    |
+| :white_check_mark: | `<leader>` vil | View Move Editor Into Last Group     |
+| :white_check_mark: | `<leader>` vin | View Move Editor Into Next Group     |
+| :white_check_mark: | `<leader>` vip | View Move Editor Into Previous Group |
+| :white_check_mark: | `<leader>` veh | View Move Editor Left                |
+| :white_check_mark: | `<leader>` vel | View Move Editor Right               |
+| :white_check_mark: | `<leader>` ceg | View Close Editor Group              |
+| :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
+| :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "e", "e"],
+			"commands": ["workbench.explorer.fileView.focus"]
+		},
+		{
+			"before": ["<Leader>", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["<Leader>", "s"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<Leader>", "d"],
+			"commands": ["editor.action.duplicateSelection"]
+		},
+		{
+			"before": ["<Leader>", "f"],
+			"commands": ["editor.action.formatDocument"]
+		},
+		{
+			"before": ["<Leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<Leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<Leader>", "r"],
+			"commands": ["editor.action.rename"]
+		},
+		{
+			"before": ["<Leader>", "t"],
+			"commands": ["workbench.action.gotoSymbol"]
+		},
+		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
+		},
+		{
+			"before": ["<Leader>", "i"],
+			"commands": ["workbench.action.toggleEditorWidths"]
+		},
+		{
+			"before": ["<Leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<Leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<Leader>", "m", "n"],
+			"commands": ["editor.action.marker.next"]
+		},
+		{
+			"before": ["<Leader>", "m", "N"],
+			"commands": ["editor.action.marker.prev"]
+		},
+		{
+			"before": ["<Leader>", "t", "r"],
+			"commands": ["workbench.action.tasks.reRunTask"]
+		},
+		{
+			"before": ["<Leader>", "t", "c"],
+			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "i"],
+			"commands": ["workbench.action.increaseViewSize"]
+		},
+		{
+			"before": ["<Leader>", "v", "d", "d"],
+			"commands": ["workbench.action.decreaseViewSize"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "h"],
+			"commands": ["workbench.action.increaseViewHeight"]
+		},
+		{
+			"before": ["<Leader>", "v", "d", "h"],
+			"commands": ["workbench.action.decreaseViewHeight"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "w"],
+			"commands": ["workbench.action.increaseViewWidth"]
+		},
+		{
+			"before": ["<Leader>", "v", "d", "w"],
+			"commands": ["workbench.action.decreaseViewWidth"]
+		},
+		{
+			"before": ["<Leader>", "t", "t"],
+			"commands": ["workbench.action.files.newUntitledFile"]
+		},
+		{
+			"before": ["<Leader>", "t", "n"],
+			"commands": ["workbench.action.nextEditor"]
+		},
+		{
+			"before": ["<Leader>", "t", "N"],
+			"commands": ["workbench.action.previousEditor"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "j"],
+			"commands": ["workbench.action.moveActiveEditorGroupDown"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "h"],
+			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "l"],
+			"commands": ["workbench.action.moveActiveEditorGroupRight"]
+		},
+		{
+			"before": ["<Leader>", "v", "g", "k"],
+			"commands": ["workbench.action.moveActiveEditorGroupUp"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "f"],
+			"commands": ["workbench.action.moveEditorToFirstGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "l"],
+			"commands": ["workbench.action.moveEditorToLastGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "n"],
+			"commands": ["workbench.action.moveEditorToNextGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "i", "p"],
+			"commands": ["workbench.action.moveEditorToPreviousGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "e", "h"],
+			"commands": ["workbench.action.moveEditorLeftInGroup"]
+		},
+		{
+			"before": ["<Leader>", "v", "e", "l"],
+			"commands": ["workbench.action.moveEditorRightInGroup"]
+		},
+		{
+			"before": ["<Leader>", "c", "e", "g"],
+			"commands": ["workbench.action.closeEditorsAndGroup"]
+		},
+		{
+			"before": ["<Leader>", "c", "o", "e"],
+			"commands": ["workbench.action.closeOtherEditors"]
+		},
+		{
+			"before": ["<Leader>", "c", "e", "o"],
+			"commands": ["workbench.action.closeEditorsInOtherGroups"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### Visual Mode
+
+| Status             | Command      | Description                |
+| ------------------ | ------------ | -------------------------- |
+| :white_check_mark: | `<leader>` a | Source Action              |
+| :white_check_mark: | `<leader>` s | Toggle Side Bar Visibility |
+| :white_check_mark: | `<leader>` d | Duplicate Selection        |
+| :white_check_mark: | `<leader>` f | Format Selection           |
+| :white_check_mark: | `<leader>` u | Transform To Title Case    |
+| :white_check_mark: | `<leader>` i | Toggle Editor Group Sizes  |
+| :white_check_mark: | `<leader>` o | Go To File In Editor       |
+| :white_check_mark: | `<leader>` p | Show All Commands          |
+| :white_check_mark: | CTRL j       | Move Line Up               |
+| :white_check_mark: | CTRL k       | Move Line Down             |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+		{
+			"before": ["<Leader>", "s"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<Leader>", "d"],
+			"commands": ["editor.action.duplicateSelection"]
+		},
+		{
+			"before": ["<Leader>", "f"],
+			"commands": ["editor.action.formatSelection"]
+		},
+		{
+			"before": ["<Leader>", "u"],
+			"commands": ["editor.action.transformToTitlecase"]
+		},
+		{
+			"before": ["<Leader>", "i"],
+			"commands": ["workbench.action.toggleEditorWidths"]
+		},
+		{
+			"before": ["<Leader>", "o"],
+			"commands": ["workbench.action.quickOpen"]
+		},
+		{
+			"before": ["<Leader>", "p"],
+			"commands": ["workbench.action.showCommands"]
+		},
+		{
+			"before": ["<C-j>"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["<C-k>"],
+			"commands": ["editor.action.moveLinesUpAction"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+## Emmet Commands
+
+Emmet allows you to write large HTML code blocks at speed of light using well-known CSS selectors. But it’s not the only thing that every web-developer needs: occasionally you have to edit your HTML and CSS code to fix bugs and add new features.
+
+### Normal Mode
+
+| Status             | Command        | Description                     |
+| ------------------ | -------------- | ------------------------------- |
+| :white_check_mark: | `<leader>` ei0 | Emmet Increment by 0.1          |
+| :white_check_mark: | `<leader>` ed0 | Emmet Decrement by 0.1          |
+| :white_check_mark: | `<leader>` eiu | Emmet Increment by 1            |
+| :white_check_mark: | `<leader>` edu | Emmet Decrement by 1            |
+| :white_check_mark: | `<leader>` eid | Emmet Increment by 10           |
+| :white_check_mark: | `<leader>` edd | Emmet Decrement by 10           |
+| :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair       |
+| :white_check_mark: | `<leader>` en  | Emmet Go To Next Edit Point     |
+| :white_check_mark: | `<leader>` eN  | Emmet Go To Previous Edit Point |
+| :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression  |
+| :white_check_mark: | `<leader>` eml | Emmet Merge Lines               |
+| :white_check_mark: | `<leader>` eut | Emmet Update Tag                |
+| :white_check_mark: | `<leader>` ert | Emmet Remove Tag                |
+| :white_check_mark: | `<leader>` esj | Emmet Split / Join Tag          |
+| :white_check_mark: | `<leader>` eui | Emmet Update Image Size         |
+| :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment            |
+| :white_check_mark: | `<leader>` erc | Emmet Reflect CSS Value         |
+| :white_check_mark: | `<leader>` ew  | Emmet Wrap with Abbreviation    |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "e", "b", "i"],
+			"commands": ["editor.emmet.action.balanceIn"]
+		},
+		{
+			"before": ["<Leader>", "e", "b", "o"],
+			"commands": ["editor.emmet.action.balanceOut"]
+		},
+		{
+			"before": ["<Leader>", "e", "i", "0"],
+			"commands": ["editor.emmet.action.incrementNumberByOneTenth"]
+		},
+		{
+			"before": ["<Leader>", "e", "d", "0"],
+			"commands": ["editor.emmet.action.decrementNumberByOneTenth"]
+		},
+		{
+			"before": ["<Leader>", "e", "i", "u"],
+			"commands": ["editor.emmet.action.incrementNumberByOne"]
+		},
+		{
+			"before": ["<Leader>", "e", "d", "u"],
+			"commands": ["editor.emmet.action.decrementNumberByOne"]
+		},
+		{
+			"before": ["<Leader>", "e", "i", "d"],
+			"commands": ["editor.emmet.action.incrementNumberByTen"]
+		},
+		{
+			"before": ["<Leader>", "e", "d", "d"],
+			"commands": ["editor.emmet.action.decrementNumberByTen"]
+		},
+		{
+			"before": ["<Leader>", "e", "t"],
+			"commands": ["editor.emmet.action.matchTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "n"],
+			"commands": ["editor.emmet.action.nextEditPoint"]
+		},
+		{
+			"before": ["<Leader>", "e", "N"],
+			"commands": ["editor.emmet.action.prevEditPoint"]
+		},
+		{
+			"before": ["<Leader>", "e", "x"],
+			"commands": ["editor.emmet.action.evaluateMathExpression"]
+		},
+		{
+			"before": ["<Leader>", "e", "m", "l"],
+			"commands": ["editor.emmet.action.mergeLines"]
+		},
+		{
+			"before": ["<Leader>", "e", "u", "t"],
+			"commands": ["editor.emmet.action.updateTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "r", "t"],
+			"commands": ["editor.emmet.action.removeTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "s", "j"],
+			"commands": ["editor.emmet.action.splitJoinTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "u", "i"],
+			"commands": ["editor.emmet.action.updateImageSize"]
+		},
+		{
+			"before": ["<Leader>", "e", "c"],
+			"commands": ["editor.emmet.action.toggleComment"]
+		},
+		{
+			"before": ["<Leader>", "e", "r", "c"],
+			"commands": ["editor.emmet.action.reflectCSSValue"]
+		},
+		{
+			"before": ["<Leader>", "e", "w"],
+			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
+### Visual Mode
+
+| Status             | Command        | Description                                   |
+| ------------------ | -------------- | --------------------------------------------- |
+| :white_check_mark: | `<leader>` ebi | Emmet Balance (inward)                        |
+| :white_check_mark: | `<leader>` ebo | Emmet Balance (outward)                       |
+| :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair                     |
+| :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment                          |
+| :white_check_mark: | `<leader>` en  | Emmet Select Next Item                        |
+| :white_check_mark: | `<leader>` eN  | Emmet Select Previous Item                    |
+| :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression                |
+| :white_check_mark: | `<leader>` ew  | Emmet Wrap Individual Lines with Abbreviation |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["<Leader>", "e", "b", "i"],
+			"commands": ["editor.emmet.action.balanceIn"]
+		},
+		{
+			"before": ["<Leader>", "e", "b", "o"],
+			"commands": ["editor.emmet.action.balanceOut"]
+		},
+		{
+			"before": ["<Leader>", "e", "t"],
+			"commands": ["editor.emmet.action.matchTag"]
+		},
+		{
+			"before": ["<Leader>", "e", "c"],
+			"commands": ["editor.emmet.action.toggleComment"]
+		},
+		{
+			"before": ["<Leader>", "e", "n"],
+			"commands": ["editor.emmet.action.selectNextItem"]
+		},
+		{
+			"before": ["<Leader>", "e", "N"],
+			"commands": ["editor.emmet.action.selectPrevItem"]
+		},
+		{
+			"before": ["<Leader>", "e", "x"],
+			"commands": ["editor.emmet.action.evaluateMathExpression"]
+		},
+		{
+			"before": ["<Leader>", "e", "w"],
+			"commands": [
+				"editor.emmet.action.wrapIndividualLinesWithAbbreviation"
+			]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
 ## Git Commands
 
 Git is a distributed version-control system for tracking changes in any set of files, originally designed for coordinating work among programmers cooperating on source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
@@ -338,9 +930,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		},
 		{
 			"before": ["leader", "g", "c", "N"],
-			"commands": [
-				"workbench.action.compareEditor.previousChange"
-			]
+			"commands": ["workbench.action.compareEditor.previousChange"]
 		},
 		{
 			"before": ["leader", "g", "i", "v"],
@@ -423,604 +1013,6 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["leader", "m", "c", "a"],
 			"commands": ["merge-conflict.accept.selection"]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
-## Emmet Commands
-
-Emmet allows you to write large HTML code blocks at speed of light using well-known CSS selectors. But it’s not the only thing that every web-developer needs: occasionally you have to edit your HTML and CSS code to fix bugs and add new features.
-
-### Normal Mode
-
-| Status             | Command        | Description                     |
-| ------------------ | -------------- | ------------------------------- |
-| :white_check_mark: | `<leader>` ei0 | Emmet Increment by 0.1          |
-| :white_check_mark: | `<leader>` ed0 | Emmet Decrement by 0.1          |
-| :white_check_mark: | `<leader>` eiu | Emmet Increment by 1            |
-| :white_check_mark: | `<leader>` edu | Emmet Decrement by 1            |
-| :white_check_mark: | `<leader>` eid | Emmet Increment by 10           |
-| :white_check_mark: | `<leader>` edd | Emmet Decrement by 10           |
-| :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair       |
-| :white_check_mark: | `<leader>` en  | Emmet Go To Next Edit Point     |
-| :white_check_mark: | `<leader>` eN  | Emmet Go To Previous Edit Point |
-| :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression  |
-| :white_check_mark: | `<leader>` eml | Emmet Merge Lines               |
-| :white_check_mark: | `<leader>` eut | Emmet Update Tag                |
-| :white_check_mark: | `<leader>` ert | Emmet Remove Tag                |
-| :white_check_mark: | `<leader>` esj | Emmet Split / Join Tag          |
-| :white_check_mark: | `<leader>` eui | Emmet Update Image Size         |
-| :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment            |
-| :white_check_mark: | `<leader>` erc | Emmet Reflect CSS Value         |
-| :white_check_mark: | `<leader>` ew  | Emmet Wrap with Abbreviation    |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{
-			"before": ["<Leader>", "e", "b", "i"],
-			"commands": ["editor.emmet.action.balanceIn"]
-		},
-		{
-			"before": ["<Leader>", "e", "b", "o"],
-			"commands": ["editor.emmet.action.balanceOut"]
-		},
-		{
-			"before": ["<Leader>", "e", "i", "0"],
-			"commands": [
-				"editor.emmet.action.incrementNumberByOneTenth"
-			]
-		},
-		{
-			"before": ["<Leader>", "e", "d", "0"],
-			"commands": [
-				"editor.emmet.action.decrementNumberByOneTenth"
-			]
-		},
-		{
-			"before": ["<Leader>", "e", "i", "u"],
-			"commands": ["editor.emmet.action.incrementNumberByOne"]
-		},
-		{
-			"before": ["<Leader>", "e", "d", "u"],
-			"commands": ["editor.emmet.action.decrementNumberByOne"]
-		},
-		{
-			"before": ["<Leader>", "e", "i", "d"],
-			"commands": ["editor.emmet.action.incrementNumberByTen"]
-		},
-		{
-			"before": ["<Leader>", "e", "d", "d"],
-			"commands": ["editor.emmet.action.decrementNumberByTen"]
-		},
-		{
-			"before": ["<Leader>", "e", "t"],
-			"commands": ["editor.emmet.action.matchTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "n"],
-			"commands": ["editor.emmet.action.nextEditPoint"]
-		},
-		{
-			"before": ["<Leader>", "e", "N"],
-			"commands": ["editor.emmet.action.prevEditPoint"]
-		},
-		{
-			"before": ["<Leader>", "e", "x"],
-			"commands": ["editor.emmet.action.evaluateMathExpression"]
-		},
-		{
-			"before": ["<Leader>", "e", "m", "l"],
-			"commands": ["editor.emmet.action.mergeLines"]
-		},
-		{
-			"before": ["<Leader>", "e", "u", "t"],
-			"commands": ["editor.emmet.action.updateTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "r", "t"],
-			"commands": ["editor.emmet.action.removeTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "s", "j"],
-			"commands": ["editor.emmet.action.splitJoinTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "u", "i"],
-			"commands": ["editor.emmet.action.updateImageSize"]
-		},
-		{
-			"before": ["<Leader>", "e", "c"],
-			"commands": ["editor.emmet.action.toggleComment"]
-		},
-		{
-			"before": ["<Leader>", "e", "r", "c"],
-			"commands": ["editor.emmet.action.reflectCSSValue"]
-		},
-		{
-			"before": ["<Leader>", "e", "w"],
-			"commands": ["editor.emmet.action.wrapWithAbbreviation"]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
-### Visual Mode
-
-| Status             | Command        | Description                                   |
-| ------------------ | -------------- | --------------------------------------------- |
-| :white_check_mark: | `<leader>` ebi | Emmet Balance (inward)                        |
-| :white_check_mark: | `<leader>` ebo | Emmet Balance (outward)                       |
-| :white_check_mark: | `<leader>` et  | Emmet Go To Matching Pair                     |
-| :white_check_mark: | `<leader>` ec  | Emmet Toggle Comment                          |
-| :white_check_mark: | `<leader>` en  | Emmet Select Next Item                        |
-| :white_check_mark: | `<leader>` eN  | Emmet Select Previous Item                    |
-| :white_check_mark: | `<leader>` ex  | Emmet Evaluate Math Expression                |
-| :white_check_mark: | `<leader>` ew  | Emmet Wrap Individual Lines with Abbreviation |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": ["<Leader>", "e", "b", "i"],
-			"commands": ["editor.emmet.action.balanceIn"]
-		},
-		{
-			"before": ["<Leader>", "e", "b", "o"],
-			"commands": ["editor.emmet.action.balanceOut"]
-		},
-		{
-			"before": ["<Leader>", "e", "t"],
-			"commands": ["editor.emmet.action.matchTag"]
-		},
-		{
-			"before": ["<Leader>", "e", "c"],
-			"commands": ["editor.emmet.action.toggleComment"]
-		},
-		{
-			"before": ["<Leader>", "e", "n"],
-			"commands": ["editor.emmet.action.selectNextItem"]
-		},
-		{
-			"before": ["<Leader>", "e", "N"],
-			"commands": ["editor.emmet.action.selectPrevItem"]
-		},
-		{
-			"before": ["<Leader>", "e", "x"],
-			"commands": ["editor.emmet.action.evaluateMathExpression"]
-		},
-		{
-			"before": ["<Leader>", "e", "w"],
-			"commands": [
-				"editor.emmet.action.wrapIndividualLinesWithAbbreviation"
-			]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
-## VSCode Shortcuts
-
-Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
-
-### Normal Mode
-
-| Status             | Command        | Description                          |
-| ------------------ | -------------- | ------------------------------------ |
-| :white_check_mark: | `<leader>` ee  | Focus On Files Explorer              |
-| :white_check_mark: | `<leader>` a   | Source Action                        |
-| :white_check_mark: | `<leader>` s   | Toggle Side Bar Visibility           |
-| :white_check_mark: | `<leader>` d   | Duplicate Selection                  |
-| :white_check_mark: | `<leader>` f   | Format Document                      |
-| :white_check_mark: | `<leader>` q   | View Close Editor                    |
-| :white_check_mark: | `<leader>` w   | File Save                            |
-| :white_check_mark: | `<leader>` r   | Rename Symbol                        |
-| :white_check_mark: | `<leader>` t   | Go To Symbol In Editor               |
-| :white_check_mark: | `<leader>` u   | Transform To Title Case              |
-| :white_check_mark: | `<leader>` i   | Toggle Editor Group Sizes            |
-| :white_check_mark: | `<leader>` o   | Go To File In Editor                 |
-| :white_check_mark: | `<leader>` p   | Show All Commands                    |
-| :white_check_mark: | `<leader>` mn  | Go To Next Problem                   |
-| :white_check_mark: | `<leader>` mN  | Go To Previous Problem               |
-| :white_check_mark: | `<leader>` tr  | Tasks Rerun Last Task                |
-| :white_check_mark: | `<leader>` tc  | Tasks Configure Task                 |
-| :white_check_mark: | `<leader>` vii | Increase Current View Size           |
-| :white_check_mark: | `<leader>` vdd | Decrease Current View Size           |
-| :white_check_mark: | `<leader>` vih | Increase Editor Height               |
-| :white_check_mark: | `<leader>` vdh | Decrease Editor Height               |
-| :white_check_mark: | `<leader>` viw | Increase Editor Width                |
-| :white_check_mark: | `<leader>` vdw | Decrease Editor Width                |
-| :white_check_mark: | `<leader>` tt  | File New Untitled File               |
-| :white_check_mark: | `<leader>` tn  | View Open Next Editor                |
-| :white_check_mark: | `<leader>` tN  | View Open Previous Editor            |
-| :white_check_mark: | `<leader>` vgj | View Move Editor Group Down          |
-| :white_check_mark: | `<leader>` vgh | View Move Editor Group Left          |
-| :white_check_mark: | `<leader>` vgl | View Move Editor Group Right         |
-| :white_check_mark: | `<leader>` vgk | View Move Editor Group Up            |
-| :white_check_mark: | `<leader>` vif | View Move Editor Into First Group    |
-| :white_check_mark: | `<leader>` vil | View Move Editor Into Last Group     |
-| :white_check_mark: | `<leader>` vin | View Move Editor Into Next Group     |
-| :white_check_mark: | `<leader>` vip | View Move Editor Into Previous Group |
-| :white_check_mark: | `<leader>` veh | View Move Editor Left                |
-| :white_check_mark: | `<leader>` vel | View Move Editor Right               |
-| :white_check_mark: | `<leader>` ceg | View Close Editor Group              |
-| :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
-| :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{
-			"before": ["<Leader>", "e", "e"],
-			"commands": ["workbench.explorer.fileView.focus"]
-		},
-		{
-			"before": ["<Leader>", "a"],
-			"commands": ["editor.action.quickFix"]
-		},
-		{
-			"before": ["<Leader>", "s"],
-			"commands": ["workbench.action.toggleSidebarVisibility"]
-		},
-		{
-			"before": ["<Leader>", "d"],
-			"commands": ["editor.action.duplicateSelection"]
-		},
-		{
-			"before": ["<Leader>", "f"],
-			"commands": ["editor.action.formatDocument"]
-		},
-		{
-			"before": ["<Leader>", "q"],
-			"commands": ["workbench.action.closeActiveEditor"]
-		},
-		{
-			"before": ["<Leader>", "w"],
-			"commands": ["workbench.action.files.save"]
-		},
-		{
-			"before": ["<Leader>", "r"],
-			"commands": ["editor.action.rename"]
-		},
-		{
-			"before": ["<Leader>", "t"],
-			"commands": ["workbench.action.gotoSymbol"]
-		},
-		{
-			"before": ["<Leader>", "u"],
-			"commands": ["editor.action.transformToTitlecase"]
-		},
-		{
-			"before": ["<Leader>", "i"],
-			"commands": ["workbench.action.toggleEditorWidths"]
-		},
-		{
-			"before": ["<Leader>", "o"],
-			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<Leader>", "p"],
-			"commands": ["workbench.action.showCommands"]
-		},
-		{
-			"before": ["<Leader>", "m", "n"],
-			"commands": ["editor.action.marker.next"]
-		},
-		{
-			"before": ["<Leader>", "m", "N"],
-			"commands": ["editor.action.marker.prev"]
-		},
-		{
-			"before": ["<Leader>", "t", "r"],
-			"commands": ["workbench.action.tasks.reRunTask"]
-		},
-		{
-			"before": ["<Leader>", "t", "c"],
-			"commands": ["workbench.action.tasks.configureTaskRunner"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "i"],
-			"commands": ["workbench.action.increaseViewSize"]
-		},
-		{
-			"before": ["<Leader>", "v", "d", "d"],
-			"commands": ["workbench.action.decreaseViewSize"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "h"],
-			"commands": ["workbench.action.increaseViewHeight"]
-		},
-		{
-			"before": ["<Leader>", "v", "d", "h"],
-			"commands": ["workbench.action.decreaseViewHeight"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "w"],
-			"commands": ["workbench.action.increaseViewWidth"]
-		},
-		{
-			"before": ["<Leader>", "v", "d", "w"],
-			"commands": ["workbench.action.decreaseViewWidth"]
-		},
-		{
-			"before": ["<Leader>", "t", "t"],
-			"commands": ["workbench.action.files.newUntitledFile"]
-		},
-		{
-			"before": ["<Leader>", "t", "n"],
-			"commands": ["workbench.action.nextEditor"]
-		},
-		{
-			"before": ["<Leader>", "t", "N"],
-			"commands": ["workbench.action.previousEditor"]
-		},
-		{
-			"before": ["<Leader>", "v", "g", "j"],
-			"commands": ["workbench.action.moveActiveEditorGroupDown"]
-		},
-		{
-			"before": ["<Leader>", "v", "g", "h"],
-			"commands": ["workbench.action.moveActiveEditorGroupLeft"]
-		},
-		{
-			"before": ["<Leader>", "v", "g", "l"],
-			"commands": [
-				"workbench.action.moveActiveEditorGroupRight"
-			]
-		},
-		{
-			"before": ["<Leader>", "v", "g", "k"],
-			"commands": ["workbench.action.moveActiveEditorGroupUp"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "f"],
-			"commands": ["workbench.action.moveEditorToFirstGroup"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "l"],
-			"commands": ["workbench.action.moveEditorToLastGroup"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "n"],
-			"commands": ["workbench.action.moveEditorToNextGroup"]
-		},
-		{
-			"before": ["<Leader>", "v", "i", "p"],
-			"commands": ["workbench.action.moveEditorToPreviousGroup"]
-		},
-		{
-			"before": ["<Leader>", "v", "e", "h"],
-			"commands": ["workbench.action.moveEditorLeftInGroup"]
-		},
-		{
-			"before": ["<Leader>", "v", "e", "l"],
-			"commands": ["workbench.action.moveEditorRightInGroup"]
-		},
-		{
-			"before": ["<Leader>", "c", "e", "g"],
-			"commands": ["workbench.action.closeEditorsAndGroup"]
-		},
-		{
-			"before": ["<Leader>", "c", "o", "e"],
-			"commands": ["workbench.action.closeOtherEditors"]
-		},
-		{
-			"before": ["<Leader>", "c", "e", "o"],
-			"commands": ["workbench.action.closeEditorsInOtherGroups"]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
-### Visual Mode
-
-| Status             | Command      | Description                |
-| ------------------ | ------------ | -------------------------- |
-| :white_check_mark: | `<leader>` a | Source Action              |
-| :white_check_mark: | `<leader>` s | Toggle Side Bar Visibility |
-| :white_check_mark: | `<leader>` d | Duplicate Selection        |
-| :white_check_mark: | `<leader>` f | Format Selection           |
-| :white_check_mark: | `<leader>` u | Transform To Title Case    |
-| :white_check_mark: | `<leader>` i | Toggle Editor Group Sizes  |
-| :white_check_mark: | `<leader>` o | Go To File In Editor       |
-| :white_check_mark: | `<leader>` p | Show All Commands          |
-| :white_check_mark: | CTRL j       | Move Line Up               |
-| :white_check_mark: | CTRL k       | Move Line Down             |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": ["<Leader>", "a"],
-			"commands": ["editor.action.quickFix"]
-		},
-		{
-			"before": ["<Leader>", "s"],
-			"commands": ["workbench.action.toggleSidebarVisibility"]
-		},
-		{
-			"before": ["<Leader>", "d"],
-			"commands": ["editor.action.duplicateSelection"]
-		},
-		{
-			"before": ["<Leader>", "f"],
-			"commands": ["editor.action.formatSelection"]
-		},
-		{
-			"before": ["<Leader>", "u"],
-			"commands": ["editor.action.transformToTitlecase"]
-		},
-		{
-			"before": ["<Leader>", "i"],
-			"commands": ["workbench.action.toggleEditorWidths"]
-		},
-		{
-			"before": ["<Leader>", "o"],
-			"commands": ["workbench.action.quickOpen"]
-		},
-		{
-			"before": ["<Leader>", "p"],
-			"commands": ["workbench.action.showCommands"]
-		},
-		{
-			"before": ["<C-j>"],
-			"commands": ["editor.action.moveLinesDownAction"]
-		},
-		{
-			"before": ["<C-k>"],
-			"commands": ["editor.action.moveLinesUpAction"]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
-## Vim Shortcuts
-
-### Normal Mode
-
-| Status             | Command      | Description                   |
-| ------------------ | ------------ | ----------------------------- |
-| :white_check_mark: | `<leader>` l | Last Character In The Line    |
-| :white_check_mark: | `<leader>` h | First Character In The Line   |
-| :white_check_mark: | K            | Move 5 Line Up                |
-| :white_check_mark: | J            | Move 5 Line Down              |
-| :white_check_mark: | CTRL n       | Turn Off Search Highlighting  |
-| :white_check_mark: | CTRL j       | View Focus Above Editor Group |
-| :white_check_mark: | CTRL k       | View Focus Below Editor Group |
-| :white_check_mark: | CTRL h       | View Focus Left Editor Group  |
-| :white_check_mark: | CTRL l       | View Focus Right Editor Group |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{
-			"before": ["J"],
-			"after": ["5", "j"]
-		},
-		{
-			"before": ["K"],
-			"after": ["5", "k"]
-		},
-		{
-			"before": ["<Leader>", "l"],
-			"after": ["$"]
-		},
-		{
-			"before": ["<Leader>", "h"],
-			"after": ["^"]
-		},
-		{
-			"before": ["<C-n>"],
-			"commands": [":nohl"]
-		},
-		{
-			"before": ["<C-h>"],
-			"after": ["<C-w>", "h"]
-		},
-		{
-			"before": ["<C-j>"],
-			"after": ["<C-w>", "j"]
-		},
-		{
-			"before": ["<C-k>"],
-			"after": ["<C-w>", "k"]
-		},
-		{
-			"before": ["<C-l>"],
-			"after": ["<C-w>", "l"]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
-### Visual Mode
-
-| Status             | Command      | Description                 |
-| ------------------ | ------------ | --------------------------- |
-| :white_check_mark: | `<leader>` l | Last Character In The Line  |
-| :white_check_mark: | `<leader>` h | First Character In The Line |
-| :white_check_mark: | J            | Move 5 Line Down            |
-| :white_check_mark: | K            | Move 5 Line Up              |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": ["<Leader>", "l"],
-			"after": ["$"]
-		},
-		{
-			"before": ["<Leader>", "h"],
-			"after": ["^"]
-		},
-		{
-			"before": ["J"],
-			"after": ["5", "j"]
-		},
-		{
-			"before": ["K"],
-			"after": ["5", "k"]
 		}
 	]
 }
@@ -1126,21 +1118,15 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		},
 		{
 			"before": ["<Leader>", "d", "e", "b"],
-			"commands": [
-				"workbench.debug.viewlet.action.enableAllBreakpoints"
-			]
+			"commands": ["workbench.debug.viewlet.action.enableAllBreakpoints"]
 		},
 		{
 			"before": ["<Leader>", "d", "d", "b"],
-			"commands": [
-				"workbench.debug.viewlet.action.disableAllBreakpoints"
-			]
+			"commands": ["workbench.debug.viewlet.action.disableAllBreakpoints"]
 		},
 		{
 			"before": ["<Leader>", "d", "r", "b"],
-			"commands": [
-				"workbench.debug.viewlet.action.removeAllBreakpoints"
-			]
+			"commands": ["workbench.debug.viewlet.action.removeAllBreakpoints"]
 		},
 		{
 			"before": ["<Leader>", "d", "n"],
