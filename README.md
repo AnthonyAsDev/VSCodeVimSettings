@@ -430,33 +430,6 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
-### Visual Mode
-
-| Status             | Command        | Description            |
-| ------------------ | -------------- | ---------------------- |
-| :white_check_mark: | `<leader>` ebi | Emmet Balance (inward) |
-
-<br>
-<details>
- <summary><strong>Settings Example</strong> (click to expand)</summary>
-
-Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
-
-```json
-{
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": ["<Leader>", "e", "b", "i"],
-			"commands": ["editor.emmet.action.balanceIn"]
-		}
-	]
-}
-```
-
-</details>
-<br>
-<br>
-
 ## Emmet Commands
 
 Emmet allows you to write large HTML code blocks at speed of light using well-known CSS selectors. But it’s not the only thing that every web-developer needs: occasionally you have to edit your HTML and CSS code to fix bugs and add new features.
