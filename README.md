@@ -336,8 +336,8 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | `<leader>` coe | View Close Other Editors In Group    |
 | :white_check_mark: | `<leader>` ceo | View Close Editors In Other Groups   |
 | :white_check_mark: | `<leader>` sh  | View Split Editor Left               |
-| :white_check_mark: | `<leader>` sd  | View Split Editor Down               |
-| :white_check_mark: | `<leader>` su  | View Split Editor Up                 |
+| :white_check_mark: | `<leader>` sj  | View Split Editor Down               |
+| :white_check_mark: | `<leader>` sk  | View Split Editor Up                 |
 | :white_check_mark: | `<leader>` sl  | View Split Editor Right              |
 
 <br>
@@ -442,15 +442,15 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.action.splitEditorLeft"]
 		},
 		{
-			"before": ["<Leader>", "s", "d"],
+			"before": ["<Leader>", "s", "j"],
 			"commands": ["workbench.action.splitEditorDown"]
 		},
 		{
-			"before": ["<Leader>", "s", "u"],
+			"before": ["<Leader>", "s", "k"],
 			"commands": ["workbench.action.splitEditorUp"]
 		},
 		{
-			"before": ["<Leader>", "s", "r"],
+			"before": ["<Leader>", "s", "l"],
 			"commands": ["workbench.action.splitEditorRight"]
 		}
 	]

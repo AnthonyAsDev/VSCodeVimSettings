@@ -312,15 +312,15 @@
 			"commands": ["workbench.action.splitEditorLeft"]
 		},
 		{
-			"before": ["<Leader>", "s", "d"],
+			"before": ["<Leader>", "s", "j"],
 			"commands": ["workbench.action.splitEditorDown"]
 		},
 		{
-			"before": ["<Leader>", "s", "u"],
+			"before": ["<Leader>", "s", "k"],
 			"commands": ["workbench.action.splitEditorUp"]
 		},
 		{
-			"before": ["<Leader>", "s", "r"],
+			"before": ["<Leader>", "s", "l"],
 			"commands": ["workbench.action.splitEditorRight"]
 		},
 		// Emmet Commands
