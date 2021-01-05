@@ -176,6 +176,10 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | :white_check_mark: | `<leader>` mN | Go To Previous Problem     |
 | :white_check_mark: | `<leader>` tr | Tasks Rerun Last Task      |
 | :white_check_mark: | `<leader>` tc | Tasks Configure Task       |
+| :white_check_mark: | `<leader>` nh | Notifications Hide         |
+| :white_check_mark: | `<leader>` nc | Notifications Clear All    |
+| :white_check_mark: | `<leader>` nf | Notifications Focus All    |
+| :white_check_mark: | `<leader>` ns | Notifications Show         |
 
 <br>
 <details>
@@ -253,6 +257,22 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "t", "c"],
 			"commands": ["workbench.action.tasks.configureTaskRunner"]
+		},
+		{
+			"before": ["<Leader>", "n", "h"],
+			"commands": ["notifications.hideList"]
+		},
+		{
+			"before": ["<Leader>", "n", "c"],
+			"commands": ["notifications.clearAll"]
+		},
+		{
+			"before": ["<Leader>", "n", "f"],
+			"commands": ["notifications.focusToasts"]
+		},
+		{
+			"before": ["<Leader>", "n", "s"],
+			"commands": ["notifications.showList"]
 		}
 	]
 }

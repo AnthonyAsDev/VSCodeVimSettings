@@ -225,6 +225,22 @@
 			"before": ["<Leader>", "t", "c"],
 			"commands": ["workbench.action.tasks.configureTaskRunner"]
 		},
+		{
+			"before": ["<Leader>", "n", "h"],
+			"commands": ["notifications.hideList"]
+		},
+		{
+			"before": ["<Leader>", "n", "c"],
+			"commands": ["notifications.clearAll"]
+		},
+		{
+			"before": ["<Leader>", "n", "f"],
+			"commands": ["notifications.focusToasts"]
+		},
+		{
+			"before": ["<Leader>", "n", "s"],
+			"commands": ["notifications.showList"]
+		},
 		// View Commands
 		{
 			"before": ["<Leader>", "v", "i", "i"],
