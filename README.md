@@ -713,9 +713,9 @@ Git is a distributed version-control system for tracking changes in any set of f
 | :white_check_mark: | `<leader>` grr   | Git Remove Remote                       |
 | :white_check_mark: | `<leader>` gsc   | Git Stage Change                        |
 | :white_check_mark: | `<leader>` gsac  | Git Stage All Changes                   |
-| :white_check_mark: | `<leader>` gsamc | Git Stage All Merge Changes             |
-| :white_check_mark: | `<leader>` gsatc | Git Stage All Tracked Changes           |
-| :white_check_mark: | `<leader>` gsauc | Git Stage All Untracked Changes         |
+| :white_check_mark: | `<leader>` gsam  | Git Stage All Merge Changes             |
+| :white_check_mark: | `<leader>` gsat  | Git Stage All Tracked Changes           |
+| :white_check_mark: | `<leader>` gsau  | Git Stage All Untracked Changes         |
 | :white_check_mark: | `<leader>` guc   | Git Unstage Changes                     |
 | :white_check_mark: | `<leader>` guac  | Git Unstage All Changes                 |
 | :white_check_mark: | `<leader>` gcm   | Git Commit                              |
@@ -743,8 +743,8 @@ Git is a distributed version-control system for tracking changes in any set of f
 | :white_check_mark: | `<leader>` gcp   | Git Cherry Pick                         |
 | :white_check_mark: | `<leader>` gdc   | Git Discard Changes                     |
 | :white_check_mark: | `<leader>` gdac  | Git Discard All Changes                 |
-| :white_check_mark: | `<leader>` gdatc | Git Discard All Tracked Changes         |
-| :white_check_mark: | `<leader>` gdauc | Git Discard All Untracked Changes       |
+| :white_check_mark: | `<leader>` gdat  | Git Discard All Tracked Changes         |
+| :white_check_mark: | `<leader>` gdau  | Git Discard All Untracked Changes       |
 | :white_check_mark: | `<leader>` gss   | Git Stash                               |
 | :white_check_mark: | `<leader>` gsiu  | Git Stash (Include Untracked)           |
 | :white_check_mark: | `<leader>` gas   | Git Apply Stash                         |
@@ -823,15 +823,15 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["git.stageAll"]
 		},
 		{
-			"before": ["leader", "g", "s", "a", "m", "c"],
+			"before": ["leader", "g", "s", "a", "m"],
 			"commands": ["git.stageAllMerge"]
 		},
 		{
-			"before": ["leader", "g", "s", "a", "t", "c"],
+			"before": ["leader", "g", "s", "a", "t"],
 			"commands": ["git.stageAllTracked"]
 		},
 		{
-			"before": ["leader", "g", "s", "a", "t", "c"],
+			"before": ["leader", "g", "s", "a", "u"],
 			"commands": ["git.stageAllUntracked"]
 		},
 		{
@@ -943,11 +943,11 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["git.cleanAll"]
 		},
 		{
-			"before": ["leader", "g", "d", "a", "t", "c"],
+			"before": ["leader", "g", "d", "a", "t"],
 			"commands": ["git.cleanAllTracked"]
 		},
 		{
-			"before": ["leader", "g", "d", "a", "u", "c"],
+			"before": ["leader", "g", "d", "a", "u"],
 			"commands": ["git.cleanAllUntracked"]
 		},
 		{

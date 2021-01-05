@@ -457,15 +457,15 @@
 			"commands": ["git.stageAll"]
 		},
 		{
-			"before": ["leader", "g", "s", "a", "m", "c"],
+			"before": ["leader", "g", "s", "a", "m"],
 			"commands": ["git.stageAllMerge"]
 		},
 		{
-			"before": ["leader", "g", "s", "a", "t", "c"],
+			"before": ["leader", "g", "s", "a", "t"],
 			"commands": ["git.stageAllTracked"]
 		},
 		{
-			"before": ["leader", "g", "s", "a", "t", "c"],
+			"before": ["leader", "g", "s", "a", "t"],
 			"commands": ["git.stageAllUntracked"]
 		},
 		{
@@ -577,11 +577,11 @@
 			"commands": ["git.cleanAll"]
 		},
 		{
-			"before": ["leader", "g", "d", "a", "t", "c"],
+			"before": ["leader", "g", "d", "a", "t"],
 			"commands": ["git.cleanAllTracked"]
 		},
 		{
-			"before": ["leader", "g", "d", "a", "u", "c"],
+			"before": ["leader", "g", "d", "a", "u"],
 			"commands": ["git.cleanAllUntracked"]
 		},
 		{
