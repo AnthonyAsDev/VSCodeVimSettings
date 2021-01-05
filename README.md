@@ -1106,6 +1106,8 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ## Debug Commands
 
+Debugging is a core feature of Visual Studio Code. In this tutorial, we will show you how to configure and use debugging basics. We will walk you through how you get started with Node. js debugging in VS Code.
+
 ### Normal Mode
 
 | Status             | Command        | Description                      |
