@@ -179,11 +179,11 @@
 			"commands": ["workbench.action.files.save"]
 		},
 		{
-			"before": ["<Leader>", "r"],
+			"before": ["<Leader>", "r", "s"],
 			"commands": ["editor.action.rename"]
 		},
 		{
-			"before": ["<Leader>", "t"],
+			"before": ["<Leader>", "t", "s"],
 			"commands": ["workbench.action.gotoSymbol"]
 		},
 		{

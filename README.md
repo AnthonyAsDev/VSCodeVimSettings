@@ -139,8 +139,8 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | :white_check_mark: | `<leader>` fd | Format Document            |
 | :white_check_mark: | `<leader>` q  | View Close Editor          |
 | :white_check_mark: | `<leader>` w  | File Save                  |
-| :white_check_mark: | `<leader>` r  | Rename Symbol              |
-| :white_check_mark: | `<leader>` t  | Go To Symbol In Editor     |
+| :white_check_mark: | `<leader>` rs | Rename Symbol              |
+| :white_check_mark: | `<leader>` ts | Go To Symbol In Editor     |
 | :white_check_mark: | `<leader>` u  | Transform To Title Case    |
 | :white_check_mark: | `<leader>` i  | Toggle Editor Group Sizes  |
 | :white_check_mark: | `<leader>` o  | Go To File In Editor       |
@@ -188,11 +188,11 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["workbench.action.files.save"]
 		},
 		{
-			"before": ["<Leader>", "r"],
+			"before": ["<Leader>", "r", "s"],
 			"commands": ["editor.action.rename"]
 		},
 		{
-			"before": ["<Leader>", "t"],
+			"before": ["<Leader>", "t", "s"],
 			"commands": ["workbench.action.gotoSymbol"]
 		},
 		{
