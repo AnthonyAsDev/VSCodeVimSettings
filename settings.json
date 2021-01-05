@@ -1,4 +1,11 @@
 {
+	"vim.insertModeKeyBindingsNonRecursive": [
+		// Vim Shortcuts
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	],
 	"vim.visualModeKeyBindingsNonRecursive": [
 		// Vim Shortcuts
 		{

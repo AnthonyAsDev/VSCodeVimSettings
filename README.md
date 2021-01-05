@@ -124,6 +124,33 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 <br>
 <br>
 
+### Insert Mode
+
+| Status             | Command | Description      |
+| ------------------ | ------- | ---------------- |
+| :white_check_mark: | jk      | Exit Insert Mode |
+
+<br>
+<details>
+ <summary><strong>Settings Example</strong> (click to expand)</summary>
+
+Below is an example of a [settings.json](https://code.visualstudio.com/Docs/customization/userandworkspace) file with settings relevant to VSCodeVim:
+
+```json
+{
+	"vim.insertModeKeyBindingsNonRecursive": [
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	]
+}
+```
+
+</details>
+<br>
+<br>
+
 ## VSCode Shortcuts
 
 Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
