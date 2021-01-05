@@ -1,5 +1,10 @@
 [
-	// File Explorer
+    // Explorer
+    {
+        "key": "e",
+        "command": "workbench.explorer.fileView.focus",
+        "when": "!editorFocus && !inputFocus"
+    },
 	{
 		"key": "a",
 		"command": "explorer.newFile",
@@ -70,12 +75,6 @@
 		"command": "-renameFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
-	// VSCode
-	{
-		"key": "e",
-		"command": "workbench.explorer.fileView.focus",
-		"when": "!editorFocus && !inputFocus"
-	},
 	// Git
 	{
 		"key": "g",
@@ -85,6 +84,11 @@
 	{
 		"key": "o",
 		"command": "workbench.action.focusNextPart",
+		"when": "timelineFollowActiveEditor && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "git.timeline.copyCommitId",
 		"when": "timelineFollowActiveEditor && !inputFocus"
 	}
 ]
