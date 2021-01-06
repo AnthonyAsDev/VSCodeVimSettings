@@ -1203,6 +1203,10 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["editor.debug.action.toggleBreakpoint"]
 		},
 		{
+			"before": ["<Leader>", "d", "x"],
+			"commands": ["workbench.action.debug.stop"]
+		},
+		{
 			"before": ["<Leader>", "d", "a", "l"],
 			"commands": ["editor.debug.action.addLogPoint"]
 		},
