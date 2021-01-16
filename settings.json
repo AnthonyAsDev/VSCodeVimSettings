@@ -509,7 +509,7 @@
 			"commands": ["git.undoCommit"]
 		},
 		{
-			"before": ["leader", "g", "p"],
+			"before": ["leader", "g", "p", "h"],
 			"commands": ["git.push"]
 		},
 		{
@@ -525,7 +525,7 @@
 			"commands": ["git.pushToForce"]
 		},
 		{
-			"before": ["leader", "g", "P"],
+			"before": ["leader", "g", "p", "l"],
 			"commands": ["git.pull"]
 		},
 		{

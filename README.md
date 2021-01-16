@@ -738,11 +738,11 @@ Git is a distributed version-control system for tracking changes in any set of f
 | :white_check_mark: | `<leader>` gcs   | Git Commit Staged                       |
 | :white_check_mark: | `<leader>` gce   | Git Commit Empty                        |
 | :white_check_mark: | `<leader>` gulc  | Git Undo Last Commit                    |
-| :white_check_mark: | `<leader>` gp    | Git Push                                |
+| :white_check_mark: | `<leader>` gph   | Git Push                                |
 | :white_check_mark: | `<leader>` gpf   | Git Push (Force)                        |
 | :white_check_mark: | `<leader>` gpbt  | Git Push To...                          |
 | :white_check_mark: | `<leader>` gpbtf | Git Push To... (Force)                  |
-| :white_check_mark: | `<leader>` gP    | Git Pull                                |
+| :white_check_mark: | `<leader>` gpl   | Git Pull                                |
 | :white_check_mark: | `<leader>` gPf   | Git Pull From...                        |
 | :white_check_mark: | `<leader>` gPr   | Git Pull (Rebase)                       |
 | :white_check_mark: | `<leader>` gAr   | Git Abort Rebase                        |
@@ -878,7 +878,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["git.undoCommit"]
 		},
 		{
-			"before": ["leader", "g", "p"],
+			"before": ["leader", "g", "p", "h"],
 			"commands": ["git.push"]
 		},
 		{
@@ -894,7 +894,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 			"commands": ["git.pushToForce"]
 		},
 		{
-			"before": ["leader", "g", "P"],
+			"before": ["leader", "g", "p", "l"],
 			"commands": ["git.pull"]
 		},
 		{
