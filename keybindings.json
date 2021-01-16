@@ -49,5 +49,21 @@
 		"key": "c",
 		"command": "workbench.files.action.collapseExplorerFolders",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	// Git
+	{
+		"key": "g",
+		"command": "workbench.scm.focus",
+		"when": "!editorFocus && !inputFocus"
+	},
+	{
+		"key": "o",
+		"command": "workbench.action.focusNextPart",
+		"when": "timelineFollowActiveEditor && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "git.timeline.copyCommitId",
+		"when": "timelineFollowActiveEditor && !inputFocus"
 	}
 ]

@@ -161,7 +161,7 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | ------------------ | ------------- | -------------------------- |
 | :white_check_mark: | `<leader>` ef | Focus On Files Explorer    |
 | :white_check_mark: | `<leader>` a  | Source Action              |
-| :white_check_mark: | `<leader>` sb | Toggle Side Bar Visibility |
+| :white_check_mark: | `<leader>` ss | Toggle Side Bar Visibility |
 | :white_check_mark: | `<leader>` ds | Duplicate Selection        |
 | :white_check_mark: | `<leader>` fd | Format Document            |
 | :white_check_mark: | `<leader>` q  | View Close Editor          |
@@ -276,6 +276,18 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		{
 			"before": ["<Leader>", "n", "s"],
 			"commands": ["notifications.showList"]
+		},
+		{
+			"before": ["<Leader>", "g", "l"],
+			"commands": ["workbench.action.gotoLine"]
+		},
+		{
+			"before": ["<Leader>", "f", "b"],
+			"commands": ["breadcrumbs.focusAndSelect"]
+		},
+		{
+			"before": ["<Leader>", "t", "w"],
+			"commands": ["editor.action.toggleWordWrap"]
 		}
 	]
 }

@@ -166,7 +166,7 @@
 			"commands": ["editor.action.quickFix"]
 		},
 		{
-			"before": ["<Leader>", "s", "b"],
+			"before": ["<Leader>", "s", "s"],
 			"commands": ["workbench.action.toggleSidebarVisibility"]
 		},
 		{
@@ -240,6 +240,18 @@
 		{
 			"before": ["<Leader>", "n", "s"],
 			"commands": ["notifications.showList"]
+		},
+		{
+			"before": ["<Leader>", "g", "l"],
+			"commands": ["workbench.action.gotoLine"]
+		},
+		{
+			"before": ["<Leader>", "f", "b"],
+			"commands": ["breadcrumbs.focusAndSelect"]
+		},
+		{
+			"before": ["<Leader>", "t", "w"],
+			"commands": ["editor.action.toggleWordWrap"]
 		},
 		// View Commands
 		{
