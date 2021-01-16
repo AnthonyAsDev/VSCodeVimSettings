@@ -180,6 +180,9 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 | :white_check_mark: | `<leader>` nc | Notifications Clear All    |
 | :white_check_mark: | `<leader>` nf | Notifications Focus All    |
 | :white_check_mark: | `<leader>` ns | Notifications Show         |
+| :white_check_mark: | `<leader>` gl | Go To Line / Column        |
+| :white_check_mark: | `<leader>` fb | Focus Breadcrumbs          |
+| :white_check_mark: | `<leader>` tw | View Toggle Word Wrap      |
 
 <br>
 <details>
@@ -1246,6 +1249,89 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 		}
 	]
 }
+```
+
+</details>
+<br>
+<br>
+
+## VSCode Explorer
+
+### In Sidebar File Explorer
+
+| Status             | Command | Description                  |
+| ------------------ | ------- | ---------------------------- |
+| :white_check_mark: | e       | File Focus On Files Explorer |
+| :white_check_mark: | a       | File New File                |
+| :white_check_mark: | A       | File New Folder              |
+| :white_check_mark: | y       | File Copy                    |
+| :white_check_mark: | x       | File Cut                     |
+| :white_check_mark: | p       | File Paste                   |
+| :white_check_mark: | r       | File Rename                  |
+| :white_check_mark: | d       | File Move To Trash           |
+| :white_check_mark: | D       | File Delete Permanent        |
+| :white_check_mark: | c       | File Collapse Folders        |
+
+<br>
+<details>
+ <summary><strong>Keybinding Example</strong> (click to expand)</summary>
+
+Visual Studio Code lets you perform most tasks directly from the keyboard. This page lists out the default bindings (keyboard shortcuts) [keybindings.json](https://code.visualstudio.com/docs/getstarted/keybindings) and describes how you can update them.
+
+```json
+[
+	// Explorer
+	{
+		"key": "e",
+		"command": "workbench.explorer.fileView.focus",
+		"when": "!editorFocus && !inputFocus"
+	},
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "shift+a",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "y",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "x",
+		"command": "filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "p",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "d",
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "shift+d",
+		"command": "deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "workbench.files.action.collapseExplorerFolders",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	}
+]
 ```
 
 </details>

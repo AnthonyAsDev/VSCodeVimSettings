@@ -1,28 +1,23 @@
 [
-    // Explorer
-    {
-        "key": "e",
-        "command": "workbench.explorer.fileView.focus",
-        "when": "!editorFocus && !inputFocus"
-    },
+	// Explorer
+	{
+		"key": "e",
+		"command": "workbench.explorer.fileView.focus",
+		"when": "!editorFocus && !inputFocus"
+	},
 	{
 		"key": "a",
 		"command": "explorer.newFile",
-		"when": "filesExplorerFocus && !inputFocus"
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 	},
 	{
 		"key": "shift+a",
 		"command": "explorer.newFolder",
-		"when": "filesExplorerFocus && !inputFocus"
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 	},
 	{
 		"key": "y",
 		"command": "filesExplorer.copy",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-	},
-	{
-		"key": "ctrl+c",
-		"command": "-filesExplorer.copy",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 	},
 	{
@@ -31,38 +26,8 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
 	},
 	{
-		"key": "ctrl+x",
-		"command": "-filesExplorer.cut",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-	},
-	{
 		"key": "p",
 		"command": "filesExplorer.paste",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "ctrl+v",
-		"command": "-filesExplorer.paste",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "d",
-		"command": "deleteFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "delete",
-		"command": "-deleteFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceMoveableToTrash && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "shift+d",
-		"command": "deleteFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "shift+delete",
-		"command": "-deleteFile",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
 	},
 	{
@@ -71,24 +36,18 @@
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
 	},
 	{
-		"key": "f2",
-		"command": "-renameFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	// Git
-	{
-		"key": "g",
-		"command": "workbench.scm.focus",
-		"when": "!editorFocus && !inputFocus"
+		"key": "d",
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
 	},
 	{
-		"key": "o",
-		"command": "workbench.action.focusNextPart",
-		"when": "timelineFollowActiveEditor && !inputFocus"
+		"key": "shift+d",
+		"command": "deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
 	},
 	{
 		"key": "c",
-		"command": "git.timeline.copyCommitId",
-		"when": "timelineFollowActiveEditor && !inputFocus"
+		"command": "workbench.files.action.collapseExplorerFolders",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
 	}
 ]
