@@ -159,7 +159,7 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 
 | Status             | Command       | Description                |
 | ------------------ | ------------- | -------------------------- |
-| :white_check_mark: | `<leader>` ef | Focus On Files Explorer    |
+| :white_check_mark: | `<leader>` ee | Focus On Files Explorer    |
 | :white_check_mark: | `<leader>` a  | Source Action              |
 | :white_check_mark: | `<leader>` ss | Toggle Side Bar Visibility |
 | :white_check_mark: | `<leader>` ds | Duplicate Selection        |
