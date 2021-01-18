@@ -65,5 +65,41 @@
 		"key": "c",
 		"command": "git.timeline.copyCommitId",
 		"when": "timelineFollowActiveEditor && !inputFocus"
+	},
+	// Terminal
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.toggleMaximizedPanel",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.terminal.scrollDown",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "workbench.action.terminal.scrollUp",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+h",
+		"command": "workbench.action.terminal.scrollDownPage",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+l",
+		"command": "workbench.action.terminal.scrollUpPage",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalProcessSupported"
 	}
 ]

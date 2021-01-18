@@ -1269,7 +1269,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 
 ## VSCode Explorer
 
-### In Sidebar File Explorer
+### Focus Sidebar File Explorer
 
 | Status             | Command | Description                  |
 | ------------------ | ------- | ---------------------------- |
@@ -1342,6 +1342,71 @@ Visual Studio Code lets you perform most tasks directly from the keyboard. This 
 		"key": "c",
 		"command": "workbench.files.action.collapseExplorerFolders",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	}
+]
+```
+
+</details>
+<br>
+<br>
+
+## VSCode Panel
+
+### Focus Terminal
+
+| Status             | Command | Description                      |
+| ------------------ | ------- | -------------------------------- |
+| :white_check_mark: | CTRL m  | View Toggle Maximized Panel      |
+| :white_check_mark: | CTRL J  | Terminal Scroll Down (Line)      |
+| :white_check_mark: | CTRL H  | Terminal Scroll Down (Page)      |
+| :white_check_mark: | CTRL K  | Terminal Scroll Down (Line)      |
+| :white_check_mark: | CTRL L  | Terminal Scroll Down (Page)      |
+| :white_check_mark: | CTRL n  | Terminal Focus Next Terminal     |
+| :white_check_mark: | CTRL N  | Terminal Focus Previous Terminal |
+
+<br>
+<details>
+ <summary><strong>Keybinding Example</strong> (click to expand)</summary>
+
+Visual Studio Code lets you perform most tasks directly from the keyboard. This page lists out the default bindings (keyboard shortcuts) [keybindings.json](https://code.visualstudio.com/docs/getstarted/keybindings) and describes how you can update them.
+
+```json
+[
+	// Terminal
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.toggleMaximizedPanel",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.terminal.scrollDown",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "workbench.action.terminal.scrollUp",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+h",
+		"command": "workbench.action.terminal.scrollDownPage",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+l",
+		"command": "workbench.action.terminal.scrollUpPage",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalProcessSupported"
 	}
 ]
 ```
