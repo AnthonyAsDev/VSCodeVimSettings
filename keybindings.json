@@ -50,6 +50,31 @@
 		"command": "workbench.files.action.collapseExplorerFolders",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
 	},
+	{
+		"key": "s",
+		"command": "explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "f",
+		"command": "revealFileInOS",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "t",
+		"command": "openInTerminal",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "u",
+		"command": "copyFilePath",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "i",
+		"command": "copyRelativeFilePath",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
 	// Git
 	{
 		"key": "g",

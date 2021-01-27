@@ -1283,6 +1283,12 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | d       | File Move To Trash           |
 | :white_check_mark: | D       | File Delete Permanent        |
 | :white_check_mark: | c       | File Collapse Folders        |
+| :white_check_mark: | s       | Open To The Sidebar          |
+| :white_check_mark: | f       | Reveal In The File Explorer  |
+| :white_check_mark: | v       | Open In Integrated Terminal  |
+| :white_check_mark: | t       | Open Timeline                |
+| :white_check_mark: | u       | Copy Path                    |
+| :white_check_mark: | i       | Copy Relative Path           |
 
 <br>
 <details>
@@ -1342,6 +1348,31 @@ Visual Studio Code lets you perform most tasks directly from the keyboard. This 
 		"key": "c",
 		"command": "workbench.files.action.collapseExplorerFolders",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "s",
+		"command": "explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "f",
+		"command": "revealFileInOS",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "t",
+		"command": "openInTerminal",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "u",
+		"command": "copyFilePath",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "i",
+		"command": "copyRelativeFilePath",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
 	}
 ]
 ```
