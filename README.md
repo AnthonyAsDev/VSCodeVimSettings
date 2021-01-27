@@ -1285,8 +1285,7 @@ Below is an example of a [settings.json](https://code.visualstudio.com/Docs/cust
 | :white_check_mark: | c       | File Collapse Folders        |
 | :white_check_mark: | s       | Open To The Sidebar          |
 | :white_check_mark: | f       | Reveal In The File Explorer  |
-| :white_check_mark: | v       | Open In Integrated Terminal  |
-| :white_check_mark: | t       | Open Timeline                |
+| :white_check_mark: | t       | Open In Integrated Terminal  |
 | :white_check_mark: | u       | Copy Path                    |
 | :white_check_mark: | i       | Copy Relative Path           |
 
